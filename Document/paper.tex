@@ -246,11 +246,11 @@ magneto-hydrodynamical (MHD) physics.
 
 \begin{figure*}
   \centering
-  \subfloat[halo 27 DM shape at small
-    radius]{\includegraphics[width=0.5\textwidth]{./pics/MHD_Vs_DM/level4_DM_halo_27_inner.png}} 
+  \subfloat[halo 16 DM shape at small
+    radius]{\includegraphics[width=0.5\textwidth]{./pics/MHD_Vs_DM/level4_DM_halo_16_inner.png}} 
   \hfill
-  \subfloat[halo 27 DM shape at big
-    radius]{\includegraphics[width=0.5\textwidth]{./pics/MHD_Vs_DM/level4_DM_halo_27_outter.png}} 
+  \subfloat[halo 16 DM shape at big
+    radius]{\includegraphics[width=0.5\textwidth]{./pics/MHD_Vs_DM/level4_DM_halo_16_outer.png}} 
   \hfill 
   \caption{DM density for inner/outer (left/right panel) DM halo regions.  
   Slice 20 percent of the max-min range in the "z" position of
@@ -330,7 +330,7 @@ the ellipse on the left (inner halo).
 
 \begin{figure*}
 \centering
-{\includegraphics[width=0.6\textwidth]{./pics/halo16.png}}
+{\includegraphics[width=0.6\textwidth]{./pics/MHD_Vs_DM/halo16_new.png}}
 \caption{Radial profile for the axial ratios and the triaxiality parameter
   $T=\frac{1-b/a}{1-c/a}$ at redshift $z=0$. 
   Radial profile was sampled at
@@ -550,25 +550,25 @@ $\cos\theta$ with time to find that the missalignment has been present
 for the last XXX Gyr.
 This trend is summarized in Figure \ref{fig:alignment_history}.
 
-\begin{figure*}
-  \centering
-  \subfloat[Perfectly aligned Axes]{\includegraphics[width=0.6\columnwidth]{./pics/well_axes.png}}
-  \hfill
-  \subfloat[Somewhat aligned Axes]{\includegraphics[width=0.6\columnwidth]{./pics/rotating_axes.png}}
-  \hfill
-  \subfloat[Chaotic Axes]{\includegraphics[width=0.6\columnwidth]{./pics/chaotic_axes.png}}
-  \hfill
-  \caption{Star: Minor Axis
-    Triangle: Medium Axis
-    Square: Major Axis
-    Color: Radii at which shape was sampled (show radii sampled)
-    Contour color: If orientation is above or below in this projection
-    Cross (black): Orientation of the stellar disk
-    Conclusion: Axes (minor) are not (generally) aligned with the
-    stellar disk nor are they usually aligned with each other from
-    different radii. We show some cases that may happen.} 
-  \label{fig:alignment}
-\end{figure*}
+%\begin{figure*}
+%  \centering
+%  \subfloat[Perfectly aligned Axes]{\includegraphics[width=0.6\columnwidth]{./pics/well_axes.png}}
+%  \hfill
+%  \subfloat[Somewhat aligned Axes]{\includegraphics[width=0.6\columnwidth]{./pics/rotating_axes.png}}
+%  \hfill
+%  \subfloat[Chaotic Axes]{\includegraphics[width=0.6\columnwidth]{./pics/chaotic_axes.png}}
+%  \hfill
+%  \caption{Star: Minor Axis
+%    Triangle: Medium Axis
+%    Square: Major Axis
+%    Color: Radii at which shape was sampled (show radii sampled)
+%    Contour color: If orientation is above or below in this projection
+%    Cross (black): Orientation of the stellar disk
+%    Conclusion: Axes (minor) are not (generally) aligned with the
+%    stellar disk nor are they usually aligned with each other from
+%    different radii. We show some cases that may happen.} 
+%  \label{fig:alignment}
+%\end{figure*}
 
 \textbf{Discussion about the distribution of alignments and their
   evolution in time: Precesion or temporary instabilities?} 
@@ -592,7 +592,18 @@ where the disk potential is weaker compared to the DM halo potential.
 {\bf Hace falta una grafica de la distribucion cumulativa de
   triaxialidad para (R\_vir y R\_vir/16 por separado), en cada panel se
   com para MHD vs DM.}
+  
+  \begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir.png}}
+\caption{Cummulative distribution of alignment $cos\theta$ between the minor axis vector sampled as R virial and the star disk vector} \label{fig:alignment_out}
+\end{figure*} 
 
+  \begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.png}}
+\caption{Cummulative distribution of alignment $cos\theta$ between the minor axis vector sampled as 1/16 of R virial and the star disk vector} \label{fig:alignment_in}
+\end{figure*} 
 
 Following that linea reasoning, one would also expect that the rounding
 effect of baryons is related to some  galactic parameters such as its
@@ -763,6 +774,18 @@ percent$ {\bf }.
   presentan en las tablas observacionales y en las de simulaciones.
   10-20kpc se acerca a 1/8Rvir, 20-25 1/4Rvir, 60kpc aproximadamente 1/2Rvir
 }
+
+\begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/Shape_Methods/q_pot_Vs_q_den.png}}
+\caption{Comparison of q calculated with isopotential and with density enclosed volumes. Continuous lines represent the Binney and Tremaine approximations for different ratios s. Scatter points represent the calculated shapes with an isopotential approximation and with the Allgood method} \label{fig:shape_comp}
+\end{figure*} 
+
+\begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/Shape_Methods/s_pot_Vs_s_den.png}}
+\caption{Comparison of s calculated with isopotential and with density enclosed volumes. Continuous lines represent the Binney \& Tremaine approximation. In the case of the ratio s, it does not depend on q.ds Scatter points represent the calculated shapes with an isopotential approximation and with the Allgood method} \label{fig:shape_comp}
+\end{figure*} 
 
 
 
