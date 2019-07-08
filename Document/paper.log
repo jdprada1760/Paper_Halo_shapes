@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.20)  1 JUL 2019 08:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.4.20)  8 JUL 2019 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,28 +672,28 @@ has been already used, duplicate ignored
 l.384 
        <./pics/MHD_Vs_DM/level4_DM_halo_16_inner.png> <./pics/MHD_Vs_DM/level4_
 DM_halo_16_outer.png>]
-<./pics/Triaxial_Plane/Triax_DM.png, id=191, 685.8423pt x 667.0521pt>
-File: ./pics/Triaxial_Plane/Triax_DM.png Graphic file (type png)
+<./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png, id=191, 674.52pt x 655.44875pt
+>
+File: ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png Graphic file (type png)
+ <use ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png>
+Package pdftex.def Info: ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png used on
+ input line 412.
+(pdftex.def)             Requested size: 215.99854pt x 209.8879pt.
 
-<use ./pics/Triaxial_Plane/Triax_DM.png>
-Package pdftex.def Info: ./pics/Triaxial_Plane/Triax_DM.png used on input line 
-412.
-(pdftex.def)             Requested size: 215.99854pt x 210.0818pt.
-
-<./pics/Triaxial_Plane/Triax_MHD.png, id=192, 685.8423pt x 667.0521pt>
-File: ./pics/Triaxial_Plane/Triax_MHD.png Graphic file (type png)
-
-<use ./pics/Triaxial_Plane/Triax_MHD.png>
-Package pdftex.def Info: ./pics/Triaxial_Plane/Triax_MHD.png used on input line
- 413.
-(pdftex.def)             Requested size: 215.99854pt x 210.0818pt.
+<./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png, id=192, 674.52pt x 655.44875p
+t>
+File: ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png Graphic file (type png)
+ <use ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png>
+Package pdftex.def Info: ./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png used o
+n input line 413.
+(pdftex.def)             Requested size: 215.99854pt x 209.8879pt.
 
 <./pics/Redshift/halo_27_DM_Z_correlation.png, id=193, 824.07875pt x 699.61375p
 t>
 File: ./pics/Redshift/halo_27_DM_Z_correlation.png Graphic file (type png)
  <use ./pics/Redshift/halo_27_DM_Z_correlation.png>
 Package pdftex.def Info: ./pics/Redshift/halo_27_DM_Z_correlation.png used on i
-nput line 470.
+nput line 469.
 (pdftex.def)             Requested size: 240.0pt x 203.74748pt.
 
 <./pics/Redshift/halo_24_level3_MHD_Z_Triax.png, id=194, 2007.5pt x 1697.34125p
@@ -701,7 +701,7 @@ t>
 File: ./pics/Redshift/halo_24_level3_MHD_Z_Triax.png Graphic file (type png)
  <use ./pics/Redshift/halo_24_level3_MHD_Z_Triax.png>
 Package pdftex.def Info: ./pics/Redshift/halo_24_level3_MHD_Z_Triax.png used on
- input line 471.
+ input line 470.
 (pdftex.def)             Requested size: 240.0pt x 202.89519pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -712,7 +712,7 @@ File: ./pics/Redshift/halo_16_level3_DM_Z.png Graphic file (type png)
 
 <use ./pics/Redshift/halo_16_level3_DM_Z.png>
 Package pdftex.def Info: ./pics/Redshift/halo_16_level3_DM_Z.png used on input 
-line 482.
+line 481.
 (pdftex.def)             Requested size: 240.0pt x 287.96478pt.
 
 <./pics/Redshift/halo_16_level3_MHD_Z.png, id=196, 2007.5pt x 2409.0pt>
@@ -720,59 +720,63 @@ File: ./pics/Redshift/halo_16_level3_MHD_Z.png Graphic file (type png)
 
 <use ./pics/Redshift/halo_16_level3_MHD_Z.png>
 Package pdftex.def Info: ./pics/Redshift/halo_16_level3_MHD_Z.png used on input
- line 483.
+ line 482.
 (pdftex.def)             Requested size: 240.0pt x 287.96478pt.
 
 
-LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 510.
+LaTeX Warning: Reference `lastpage' on page 4 undefined on input line 509.
 
 [4pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.509 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.509 
       pdfTeX warning (ext4): destination with the same identifier (name{table.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.510 
+l.509 
        <./pics/MHD_Vs_DM/halo16_new.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `fig:alignment' on page 5 undefined on input line 536.
+LaTeX Warning: Reference `fig:alignment' on page 5 undefined on input line 535.
 
 
 
-LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 544.
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+
+
+LaTeX Warning: Reference `lastpage' on page 5 undefined on input line 543.
 
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.544 
+l.543 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.544 
-       <./pics/Triaxial_Plane/Triax_DM.png> <./pics/Triaxial_Plane/Triax_MHD.pn
-g> <./pics/Redshift/halo_27_DM_Z_correlation.png> <./pics/Redshift/halo_24_leve
-l3_MHD_Z_Triax.png>]
+l.543 
+       <./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png> <./pics/Triaxial_Plane/
+Lvl_4_Triax_Plane_MHD.png> <./pics/Redshift/halo_27_DM_Z_correlation.png> <./pi
+cs/Redshift/halo_24_level3_MHD_Z_Triax.png>]
 
 LaTeX Warning: Reference `fig:alignment_history' on page 6 undefined on input l
-ine 551.
+ine 550.
 
 
 <./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir.png, id=218, 4
@@ -782,7 +786,7 @@ ic file (type png)
 
 <use ./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir.png>
 Package pdftex.def Info: ./pics/Star_Disk_Alignment/Cummulative_Alignment_Histo
-gram_Rvir.png used on input line 598.
+gram_Rvir.png used on input line 597.
 (pdftex.def)             Requested size: 302.40308pt x 201.61356pt.
 
 <./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.png, id=219
@@ -792,122 +796,147 @@ aphic file (type png)
 
 <use ./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.png>
 Package pdftex.def Info: ./pics/Star_Disk_Alignment/Cummulative_Alignment_Histo
-gram_Rvir_16.png used on input line 604.
+gram_Rvir_16.png used on input line 603.
 (pdftex.def)             Requested size: 302.40308pt x 201.61356pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--634
+
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 629.
+LaTeX Warning: Reference `lastpage' on page 6 undefined on input line 634.
 
 [6pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.629 
+l.634 
        <./pics/Redshift/halo_16_level3_DM_Z.png> <./pics/Redshift/halo_16_level
 3_MHD_Z.png>]
+Underfull \hbox (badness 1062) in paragraph at lines 635--640
+\T1/aer/m/n/9 force a clas-si-fi-ca-tion of im-por-tant vari-ables. Then, we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--640
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (22.1622pt too wide) in paragraph at lines 646--657
+ [] 
+ []
+
+
+<./pics/Sphericity/Sphericity_signal_to_noise.png, id=230, 1129.21875pt x 1129.
+21875pt>
+File: ./pics/Sphericity/Sphericity_signal_to_noise.png Graphic file (type png)
+ <use ./pics/Sphericity/Sphericity_signal_to_noise.png>
+Package pdftex.def Info: ./pics/Sphericity/Sphericity_signal_to_noise.png used 
+on input line 665.
+(pdftex.def)             Requested size: 302.40308pt x 302.39471pt.
+
 
 LaTeX Warning: File `./pics/Delta asphericity Vs Star Density.png' not found on
- input line 645.
+ input line 684.
 
-<./pics/Delta asphericity Vs Star Density.png, id=232, 462.528pt x 346.896pt>
+<./pics/Delta asphericity Vs Star Density.png, id=231, 462.528pt x 346.896pt>
 File: ./pics/Delta asphericity Vs Star Density.png Graphic file (type png)
 
 <use ./pics/Delta asphericity Vs Star Density.png>
 Package pdftex.def Info: ./pics/Delta asphericity Vs Star Density.png used on i
-nput line 645.
+nput line 684.
 (pdftex.def)             Requested size: 240.0pt x 180.00055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--649
+Underfull \hbox (badness 10000) in paragraph at lines 684--688
 []\T1/aer/m/n/8 asphericity Vs Star Den-sity.png
  []
 
 
-Overfull \hbox (11.23135pt too wide) in paragraph at lines 695--728
- [][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-LaTeX Warning: Reference `fig:density_potential' on page 7 undefined on input l
-ine 752.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 759.
+LaTeX Warning: Reference `lastpage' on page 7 undefined on input line 730.
 
 [7pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.759 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
+l.730 \end{table*}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.759 
-       <./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir.png> <.
-/pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.png>]
-<./pics/Shape_Methods/q_pot_Vs_q_den.png, id=274, 433.62pt x 289.08pt>
+l.730 \end{table*}
+                   <./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_
+Rvir.png> <./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.p
+ng>]
+Overfull \hbox (11.23135pt too wide) in paragraph at lines 734--767
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:density_potential' on page 8 undefined on input l
+ine 791.
+
+
+LaTeX Warning: Reference `lastpage' on page 8 undefined on input line 799.
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.799 A
+       lthough the analytic expression is meant to be used on the outerpdfTeX w
+arning (ext4): destination with the same identifier (name{table.5}) has been al
+ready used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.799 A
+       lthough the analytic expression is meant to be used on the outerpdfTeX w
+arning (ext4): destination with the same identifier (name{figure.9}) has been a
+lready used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.799 A
+       lthough the analytic expression is meant to be used on the outer <./pics
+/Sphericity/Sphericity_signal_to_noise.png> <./pics/Delta asphericity Vs Star D
+ensity.png>]
+<./pics/Shape_Methods/q_pot_Vs_q_den.png, id=284, 433.62pt x 289.08pt>
 File: ./pics/Shape_Methods/q_pot_Vs_q_den.png Graphic file (type png)
 
 <use ./pics/Shape_Methods/q_pot_Vs_q_den.png>
 Package pdftex.def Info: ./pics/Shape_Methods/q_pot_Vs_q_den.png used on input 
-line 780.
+line 819.
 (pdftex.def)             Requested size: 302.40308pt x 201.61356pt.
 
-<./pics/Shape_Methods/s_pot_Vs_s_den.png, id=275, 433.62pt x 289.08pt>
+<./pics/Shape_Methods/s_pot_Vs_s_den.png, id=285, 433.62pt x 289.08pt>
 File: ./pics/Shape_Methods/s_pot_Vs_s_den.png Graphic file (type png)
 
 <use ./pics/Shape_Methods/s_pot_Vs_s_den.png>
 Package pdftex.def Info: ./pics/Shape_Methods/s_pot_Vs_s_den.png used on input 
-line 786.
+line 825.
 (pdftex.def)             Requested size: 302.40308pt x 201.61356pt.
 
-Underfull \hbox (badness 1264) in paragraph at lines 811--814
+Underfull \hbox (badness 1264) in paragraph at lines 850--853
 \T1/aer/m/n/9 This project has re-ceived fund-ing from the Eu-ro-pean
  []
 
 (./paper.bbl
-
-LaTeX Warning: Reference `lastpage' on page 8 undefined on input line 44.
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{table.5}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.44 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.6}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.44 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.8
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.44 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.7}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.44 
-      <./pics/Delta asphericity Vs Star Density.png>]
 
 Package hyperref Warning: Suppressing empty link on input line 66.
 
@@ -919,41 +948,52 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 Package hyperref Warning: Suppressing empty link on input line 72.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 LaTeX Warning: Reference `lastpage' on page 9 undefined on input line 148.
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) 
-has been already used, duplicate ignored
+[9pdfTeX warning (ext4): destination with the same identifier (name{table.6}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.148   et~al.}{2015}]{Eagle}
                              pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.10}) has been already used, duplicate ignored
+dentifier (name{table.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.148   et~al.}{2015}]{Eagle}
-                              <./pics/Shape_Methods/q_pot_Vs_q_den.png> <./pics
-/Shape_Methods/s_pot_Vs_s_den.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 817.
+                             pdfTeX warning (ext4): destination with the same i
+dentifier (name{table.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.148   et~al.}{2015}]{Eagle}
+                             ])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 856.
 
 
-LaTeX Warning: Reference `lastpage' on page 10 undefined on input line 817.
+LaTeX Warning: Reference `lastpage' on page 10 undefined on input line 856.
 
-[10
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 817.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.856 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.856 \end{document}
+                    
+
+ <./pics/Shape_Methods/q_pot_Vs_q_den.png> <./pics/Shape_Methods/s_pot_Vs_s_den
+.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 856.
  (./paper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 817.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 817.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 856.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 856.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 1F24D21586553ED72A2A89DAF852DA6E;704.
 
@@ -963,16 +1003,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 817.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 856.
  ) 
 Here is how much of TeX's memory you used:
- 9167 strings out of 494910
- 135503 string characters out of 6179836
- 252759 words of memory out of 5000000
- 12191 multiletter control sequences out of 15000+600000
+ 9177 strings out of 494910
+ 135932 string characters out of 6179836
+ 253150 words of memory out of 5000000
+ 12197 multiletter control sequences out of 15000+600000
  50577 words of font info for 111 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,15n,49p,718b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,15n,49p,718b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -997,10 +1037,10 @@ s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
 c/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msam10.pfb>
-Output written on paper.pdf (10 pages, 3099628 bytes).
+Output written on paper.pdf (10 pages, 3451519 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 

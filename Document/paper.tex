@@ -409,17 +409,16 @@ radius.
  
 \begin{figure*}
 \begin{center}
-\includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Triax_DM.png}
- \includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Triax_MHD.png}
+\includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png}
+ \includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png}
 \end{center}
 \caption{Axial ratios for the 30 halos in the Level 3 DM simulations
   on the left and MHD simulations on the right.
-   Each dot represents the shape characterization of each halo at the
-   2 times the virial radius and a  1/16 fraction of the virial radius
+   Each dot represents the shape characterization of each halo at the virial radius and a  1/8 fraction of the virial radius
    differentiated by color. 
    Errorbar shows median and errors for each sampled radii. 
    Conclusion: DM halos are rounder on the outskirts {\bf Esto necesita
-  correccion. Debe ser a R1/16 y R (no 2R!)}}
+  correccion. Debe ser a R1/16 y R (no 2R!) Corregido!}}
   \label{fig:triax_DM_MHD}
 \end{figure*}
 
@@ -617,15 +616,55 @@ In other words, the effect of the baryonic disk on the shape of the DM halo
 does not fully explain the deviation from oblateness of MHD halos at
 $r<10$kpc. 
 
-Figure  \ref{fig:Star_Density_effect} shows the
-{\bf que es es lo que muestra esta grafica? falta las unidades de la
-  densidad. y el eje vertical que es? es un cambio absoluto? fraccional?}
-
 {\bf Finalmente cuales son las cantidades disponibles en el disco?
   cuales son las que muestran una mayor correlacion? Haria falta un
   plot con todas las correlaciones y la mencion de alguna prueba de
   machine learning del fit lineal para ver cuales son los parametros
   mas importantes.}
+  
+  We measured the sphericity of a halo shape defined as the distance 
+  from the point that characterizes the shape in the triaxiality plane
+  to the point $(q=1,s=1)$, which represents a perfect sphere. Taking this 
+  as our metric of interest, the sphericity question becomes a search for
+  important variables and tendencies that affect this quantity. For this case,
+  given the small sample of 30 halos, we chose to study this problem with different 
+  3 methods to account for the lacking statistical consistency. We analyzed the effect
+  of the Star disk Radius, Baryonic fraction, Gas density, BH density, Gas Radius and
+  Star density.\\
+   
+  We started with a simple linear Lasso regression to force a classification of 
+  important variables. Then, we converted this problem in a binary classification problem
+  by partitioning the samples in two balanced groups according to the studied metric which was then fitted using Random forest.
+  Finally, we concluded this analysis with an MCMC sampling of the likelyhood of a linear model
+  with varying slope and intercept parameters.\\
+  
+  The results of each method are presented below:
+  
+  \begin{table}
+\setlength{\tabcolsep}{3pt}
+\begin{center}
+\begin{tabular}{l|ccc}
+ Variable/Method& Lasso& Random Forest & MCMC \\
+ & (slope) & (feature importance)&(signal-to noise)\\
+\hline 
+Star disk Radius &$-0.168 (1)$&$23\% (2)$&$-0.140$  (3)\\[0.1cm]
+Gas Radius&$0.081 (5)$&$12.6\% (5)$&$0.217 (1)$\\[0.1cm] 
+Star Density &$-0.064 (6)$&$15.2\% (4)$&$-0.102 (6)$\\[0.1cm]
+BH Density&$0.084 (4)$&$16.1\% (3)$&$0.108 (5)$\\[0.1cm] 
+Gas Density &$0.097 (3)$&$28.4 \%(1)$&$0.202 (2)$\\[0.1cm] 
+Baryonic fraction &$-0.167 (2)$&$4\% (6)$&$/0.146 (4)$\\[0.1cm]  
+\end{tabular}
+\end{center}
+\caption{Results of variable importance of the three methods used to analyse
+		 the effect of baryons on the rounding effect of halos. Each method has a different
+		 metric for the variable importance and are not comparable but in rankings}  
+\label{table:sphericity}
+\end{table} 
+  \begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/Sphericity/Sphericity_signal_to_noise.png}}
+\caption{Distribution of likelihood for different values of the linear parameters. This gives us an idea of the consistency of the fit } \label{fig:sphericity}
+\end{figure*}    
 
 \textbf{Actually we have not examined the relation of c/a in MHD halos
   with some measure of c/a from the disk, that is something like
