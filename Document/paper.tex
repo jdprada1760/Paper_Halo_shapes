@@ -241,9 +241,6 @@ versions of the simulation: DM-only and DM plus baryons with
 magneto-hydrodynamical (MHD) physics.  
 
 
-
-
-
 \begin{figure*}
   \centering
   \subfloat[DM shape at small radius]{\includegraphics[width=0.5\textwidth]{level4_DM_halo_24_2.png}} 
@@ -258,11 +255,71 @@ magneto-hydrodynamical (MHD) physics.
   \caption{DM density in a slice with width one tenth of the virial radius.
   The black ellipses show the result of the fitting procedure. 
   Upper panels correspond to DM only simulations, lower panels to MHD simulations.
-  Left panels show data at small radii, while right panels at large radii.}
+  Left panels show data at small radii, while right panels at large
+  radii.
+  The cut is made along the minor axis of the halo shape.}
 \label{fig:slices}
 \end{figure*}
 
 
+
+\begin{figure*}
+\centering
+{\includegraphics[width=0.6\textwidth]{./pics/MHD_Vs_DM/halo16_new.png}}
+\caption{Radial profile for the axial ratios $b/a$, $c/a$, and the triaxiality parameter
+  $T$ at redshift $z=0$.
+  The continous/dashed lines correspond to the MHD/DM simulations respectively.
+  The vertical line corresponds to the virial radius.}
+\label{fig:triaxial_radius}
+\end{figure*} 
+
+
+ 
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png}
+ \includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png}
+\end{center}
+\caption{Axial ratios for the 30 halos in the Level 3 DM simulations
+  on the left and MHD simulations on the right.
+   Each dot represents the shape characterization of each halo 
+   Red circles represent measurements at the virial radius and the
+   blue squares are measurements at 1/8 of the virial radius.   
+   The crosses represent the mean values and standard deviation of
+   each sample.
+   Overall we can see three things. 
+   First, in DM only simulations halos are rounder in the outskirts
+   than in the inner part.
+   Second, halos in MHD are rounder than its DM only counterparts.
+   Third, halos in MHD simulations are slightly rounder in the inner
+   part compared to the outskirts.}
+  \label{fig:triax_DM_MHD}
+\end{figure*}
+
+
+\begin{figure*}
+\includegraphics[width=0.9\columnwidth]{triaxialiy_distro_DM.pdf}
+\includegraphics[width=0.9\columnwidth]{triaxialiy_distro_MHD.pdf}
+\caption{Cumulative fraction of the triaxiality for all 30 halos in
+  Level 4 simulations. Right/left panel correspond to DM/MHD
+  simulations respectively. 
+  This quantifies the main trends we find: in DM only simulations
+  rounder in the outskirts, halos in MHD are rounder than DM only, and
+  in MHD simulations halos tend to be rounder at the inner regions
+  than its outskirts.}
+\label{fig:triax_cumulative}
+\end{figure*}
+
+
+\begin{figure}
+\includegraphics[width=0.9\columnwidth]{delta_triaxialiy_distro.pdf}
+\caption{Cumulative fraction of the changes in the triaxility betwen
+  MHD and DM simulations at different radii. 
+  At all radii at least $80\%$ of the halos became rounder in the MHD
+  simulations. 
+  However, the effect is more pronounced at smaller radii.}
+\label{fig:triax_difference}
+\end{figure}
 
 \section{Determining the halo shape}
 
@@ -307,7 +364,7 @@ Aquarius simulations \citep{Vera-Ciro_et_al._2011}.
 
 We restrict the sampling of the ellipsoidal parameters to radii
 between $1/16 R_{vir}$ and $2R_{vir}$, where  $R_{vir}$ is taken as the
-radius enclosing a sphere with 500 times the average dark matter
+radius enclosing a sphere with 200 times the average dark matter
 density of the Universe. 
 All our results use of this reference radius
 unless strictly stated otherwise. 
@@ -332,17 +389,6 @@ boundary of the estimated shape ellipsoid.
 Indeed, the ellipse panel on the right (outer halo) is rounder than
 the ellipse on the left (inner halo). 
 
-
-\begin{figure*}
-\centering
-{\includegraphics[width=0.6\textwidth]{./pics/MHD_Vs_DM/halo16_new.png}}
-\caption{Radial profile for the axial ratios and the triaxiality parameter
-  $T=\frac{1-b/a}{1-c/a}$ at redshift $z=0$. 
-  Radial profile was sampled at
-  redshift 0 and there are two sets of lines showing MHD and DM-only
-  versions of the axial ratios profile. {\bf Aqui hay que quiar c/b,
-    no es relevante}} \label{fig:triaxial_radius}
-\end{figure*} 
 
 
 We quantify this effect by plotting the axial ratios $q$, $s$,
@@ -411,21 +457,6 @@ are consistently rounder in MHD simulations than DM-only runs at every
 radius. 
 
 
- 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_DM.png}
- \includegraphics[width=0.9\columnwidth]{./pics/Triaxial_Plane/Lvl_4_Triax_Plane_MHD.png}
-\end{center}
-\caption{Axial ratios for the 30 halos in the Level 3 DM simulations
-  on the left and MHD simulations on the right.
-   Each dot represents the shape characterization of each halo at the virial radius and a  1/8 fraction of the virial radius
-   differentiated by color. 
-   Errorbar shows median and errors for each sampled radii. 
-   Conclusion: DM halos are rounder on the outskirts {\bf Esto necesita
-  correccion. Debe ser a R1/16 y R (no 2R!) Corregido!}}
-  \label{fig:triax_DM_MHD}
-\end{figure*}
 
 
 
@@ -592,22 +623,14 @@ This rounding effect can be explained by gravitational effect of the
 flattened axisymmetric galactic disk. 
 It also explanes the weakness of this affect around $\approx 100$kpc,
 where the disk potential is weaker compared to the DM halo potential. 
-
-{\bf Hace falta una grafica de la distribucion cumulativa de
-  triaxialidad para (R\_vir y R\_vir/16 por separado), en cada panel se
-  com para MHD vs DM.}
   
-  \begin{figure*}
+\begin{figure}
 \centering
-{\includegraphics[width=0.6\textwidth]{./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir.png}}
-\caption{Cummulative distribution of alignment $cos\theta$ between the minor axis vector sampled as R virial and the star disk vector} \label{fig:alignment_out}
-\end{figure*} 
-
-  \begin{figure*}
-\centering
-{\includegraphics[width=0.6\textwidth]{./pics/Star_Disk_Alignment/Cummulative_Alignment_Histogram_Rvir_16.png}}
-\caption{Cummulative distribution of alignment $cos\theta$ between the minor axis vector sampled as 1/16 of R virial and the star disk vector} \label{fig:alignment_in}
-\end{figure*} 
+\includegraphics[width=0.5\textwidth]{cumulative_alignment.pdf}
+\caption{Cumulative distribution of alignment $\cos\theta$ between the
+  minor axis of the dark matter halo at different radii and the
+  stellar disk.} \label{fig:alignment_out}
+\end{figure} 
 
 Following that linea reasoning, one would also expect that the rounding
 effect of baryons is related to some  galactic parameters such as its
@@ -665,11 +688,12 @@ Baryonic fraction &$-0.167 (2)$&$4\% (6)$&$/0.146 (4)$\\[0.1cm]
 		 metric for the variable importance and are not comparable but in rankings}  
 \label{table:sphericity}
 \end{table} 
-  \begin{figure*}
-\centering
-{\includegraphics[width=0.6\textwidth]{./pics/Sphericity/Sphericity_signal_to_noise.png}}
-\caption{Distribution of likelihood for different values of the linear parameters. This gives us an idea of the consistency of the fit } \label{fig:sphericity}
-\end{figure*}    
+
+%  \begin{figure*}
+%\centering
+%{\includegraphics[width=0.6\textwidth]{./pics/Sphericity/Sphericity_signal_to_noise.png}}
+%\caption{Distribution of likelihood for different values of the linear parameters. This gives us an idea% of the consistency of the fit } \label{fig:sphericity}
+%\end{figure*}    
 
 \textbf{Actually we have not examined the relation of c/a in MHD halos
   with some measure of c/a from the disk, that is something like
