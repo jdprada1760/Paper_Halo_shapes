@@ -1,3 +1,4 @@
+# Reference https://arxiv.org/abs/1705.03018 Quenching and ram pressure stripping of simulated Milky Way satellite galaxies Christine M. Simpson et al
 # (1) the simulation name, (2) the host halo M200, (3) the host halo R200, (4) the number of satellites, defined as subhaloes within 300 kpc of the host halo (first number) or 1 Mpc (second number), with a minimum of stellar mass within 2r1/2 of 5 × 105 M, a total subhalo mass greater than 108 M, and a dark matter mass greater than 106 M, (5) the vvmax of the largest subhalo within 300 kpc, (6) the fraction of quenched subhaloes (see Section 3.3 for a description of our quenching criteria), and (7) the fraction of subhaloes that have less than 105 M in H I mass. T
 1 0.93 206 11  30 112 0.36  0.53 0.27  0.4
 2 1.91 262 13  25 152 0.62  0.44 0.62  0.44
