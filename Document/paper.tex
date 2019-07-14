@@ -14,6 +14,7 @@
 \usepackage{multicol}
 \usepackage{blindtext}
 \newcolumntype{?}{!{\vrule width 1pt}}
+\newcommand{\Msun}{\,{\rm Mpc}$_{\odot}$\,}
 \newcommand{\Mpch}{\,{\rm Mpc}\,\ifmmode h^{-1}\else $h^{-1}$\fi}
 \newcommand{\kpch}{\,{\rm kpc}\,\ifmmode h^{-1}\else $h^{-1}$\fi}
 \newcommand{\kpc}{\,{\rm kpc}\,}
@@ -239,8 +240,6 @@ halo 27&39.617&39.056&0.324&0.273&227.908&223.484&14.048&13.244\\
 
 \section{Numerical Simulations}
 
-In this work we use the results of the state-of-the artAuriga
-simulations 
 
 The Auriga project offers cosmological zoom in simulations of MW-sized 
 dark matter halos in a $\Lambda CDM$ cosmology. 
@@ -254,17 +253,25 @@ The objects in those simulations were selected from a set of 30
 isolated halos in the Evolution and Assembly of GaLaxies and their
 Environments (EAGLE)  project \citep{Eagle}.   
 These halos were randomly selected from a sample of the most isolated
-halos whose virial mass $M_{200}$ was between $10^{12}M_\odot$ and
+halos at $z=0$ whose virial mass $M_{200}$ was between $10^{12}M_\odot$ and
 $2\times 10^{12}M_\odot$. 
 The cosmological parameters in these simulatins correspond to
 $\Omega_m=0.307$, $\Omega_b=0.048$, $\Omega_\Lambda=0.693$ and a
 dimensionless Hubble parameter $h=0.6777$ [CITATION PLANCK 2014]
 
 
-These halos were re-simulated with higher resolution an varying
-physical realism using the AREPO code \citep{arepo}.
- 
-All 30 halos were simulated within resolution defined for Aquarius
+The selected halos were re-simulated at higher resultion by applying a
+zoom-in technique with varying physical realism using the moving-mesh AREPO code
+that includes gravity, ideal magnetohydrodynamics (MHD), 
+phenomenological descriptions for star formation, chemical enrichment
+from supernovae and its stellar feedback.  The simulation also follows
+the formation and evolution of black holes together with the Active
+Galactic Nuclei feedback \citep{arepo} [CITATIONPAKMORE].  
+
+
+
+The 30 zoom-on halos have a dark matter particle mass of $\sim 3\times
+10^5$\Msun.
 simulations corresponding to $\sim 3\times 10^6$ high resolution DM
 particles of $\sim 2.5 \times 10^5 M_\odot$.  
 This resolution is labeled as Level 4, the main details for each halo
