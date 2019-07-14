@@ -242,7 +242,7 @@ halo 27&39.617&39.056&0.324&0.273&227.908&223.484&14.048&13.244\\
 
 
 The Auriga project offers cosmological zoom in simulations of MW-sized 
-dark matter halos in a $\Lambda CDM$ cosmology. 
+dark matter halos in a $\Lambda$CDM cosmology. 
 This simulations come in two versions: dark matter only and
 baryonic physics including magetohydrodynamics (MHD).
 A detailed description of the simulations and their
@@ -282,11 +282,13 @@ This setup corresponds to \texttt{Level4} resolution.
 From these 30 halos, 6 of them where re-simulated at higher resolution
 taking into account a spatial factor of 2 in each spatial dimension,
 this is the \texttt{Level3} resolution.  
+There are $\sim 4\times 10^6$ dark matter particles within the virial radius
+of \texttt{Level4} halos at $z=0$, this number increases to $\sim 3\times 10^7$ in
+\texttt{Level3} simulations. 
  
-In this work we analyse all the 30 halos in the \texttt{Level4}
-resolution. 
-All the results that we report at $z=0$ as a function of radius and
-the correlations with disk properties are performed with that sample.
+In this work all the results that we report at $z=0$ as a function of radius and
+the correlations with disk properties correspond to the 30 halos in
+the \texttt{Level4} resolution. 
 For the measurement on shape evolution with time we use the 6 halos in
 the \texttt{Level3} simulations.
 Finally, all  halos described so far have also been simulated at the same
@@ -385,29 +387,32 @@ Observational inference models usually estimate the
 isopotential contours which are probed by tracers (gas, stars), while
 simulations work with the isodensity contours which can be directly
 calculated from particle positions.  
-
-However, in numerical simulations the density contours are not smooth
-and are sensitive to the presence of small satelites. 
-For this reason we choose to measure the shape by taking
+Furthermore, the density contours in thin shells are very sensitive to
+the presence of small satelites.  
+For this reason we measure the shape by taking
 volume-enclosed particles, rather than shell-enclosed.  
-We follow the shape measurement method presented by
-\cite{Allgood_et_al._2006} that uses the reduced
-inertia tensor,     
+
+We measure the shape using the reduced inertia tensor \citep{Allgood_et_al._2006}, 
+
 
 \begin{equation}
 I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
 \label{eq:inertia}
 \end{equation}
 
-with the positions components weighted by the k-th particle distance
-$d_k^2=x_k^2+y_k^2+z_k^2$, the particle positions are measured from
-the minimum of the gravitational potential in each halo.
-The diagonalization of this tensor yields the principal axes of the
-structure as well as the eigen-quantities which are proportional to
-the squared principal axes $a>b>c$. 
+where the particle positions are measured from the minimum of the
+gravitational potential in each halo and each is weighted by the k-th
+particle distance 
+$d_k^2=x_k^2+y_k^2+z_k^2$, 
+
+The diagonalization of this tensor yields the eigenvectors and
+eigenvalues that represent an ellipsoidal dark matter halo.
+The axis lenghts of this ellipsoid $a\geq b \geq c$ are the square
+root of the ${\bf I}$ eigenvalues and the direction of the principal
+axis are the corresponding eigenvectors 
 
 We start the calculations taking into account particles within a
-sphere of radius $R$ and then  recharacterize the triaxial parameters
+sphere of radius $R$ and then recharacterize the triaxial parameters
 by taking into account particles within an ellipsoid of semi-axes
 $r,r/q,r/s$ and re-scaled distance $d^2=x^2+(y/q)^2+(z/s)^2$, where $q
 = b/a$ and $s=c/a$ are the previously calculated axial ratios. 
@@ -416,14 +421,13 @@ less than $10^{-6}$.
 This is the same method used to estimate the halo shape in the DM-only
 Aquarius simulations \citep{Vera-Ciro_et_al._2011}. 
 
-We restrict the sampling of the ellipsoidal parameters to radii
-between $1/16 R_{vir}$ and $2R_{vir}$, where  $R_{vir}$ is taken as the
-radius enclosing a sphere with 200 times the average dark matter
+Following the convergence critery by \cite{Vera-Crito_et_al.2011} we
+restrict the sampling of the ellipsoidal parameters to radii  between
+$\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the  radius enclosing a sphere with 200 times the average dark matter
 density of the Universe. 
-All our results use of this reference radius
-unless strictly stated otherwise. 
-We peform the shape measurements both as a function of radius and
-redshift for all halos in the sample.
+On average, over the 30 halos in the \texttt{Level4} sample
+$R_{200}=200\pm 10$kpc. 
+For \texttt{Level3} halos we go down to distances $\sim 0.2$ kpc.  
 
 
 \section{Results}
