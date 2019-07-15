@@ -248,8 +248,8 @@ these halos as the DMO (Dark Matter Only) sample.
  
 \begin{figure*}
 \begin{center}
-\includegraphics[width=0.9\columnwidth]{Lvl_4_Triax_Plane_DM.png}
- \includegraphics[width=0.9\columnwidth]{Lvl_4_Triax_Plane_MHD.png}
+\includegraphics[width=0.9\columnwidth]{Lvl_4_Triax_Plane_DM.pdf}
+ \includegraphics[width=0.9\columnwidth]{Lvl_4_Triax_Plane_MHD.pdf}
 \end{center}
 \caption{Axial ratios for the 30 halos in the Level 3 DM simulations
   on the left and MHD simulations on the right.
@@ -322,6 +322,9 @@ Furthermore, the density contours in thin shells are very sensitive to
 the presence of small satelites.  
 For this reason we measure the shape by taking
 volume-enclosed particles, rather than shell-enclosed.  
+This method yields results in good agreement to the isodensity
+contours for radii smaller than half the virial radius as explored by
+\citep{Vera-Ciro_et_al._2011}.
 
 We measure the shape using the reduced inertia tensor \citep{Allgood_et_al._2006}, 
 
@@ -334,7 +337,7 @@ I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
 where the particle positions are measured from the minimum of the
 gravitational potential in each halo and each is weighted by the k-th
 particle distance 
-$d_k^2=x_k^2+y_k^2+z_k^2$, 
+$d_k^2=x_k^2+y_k^2+z_k^2$.
 
 The diagonalization of this tensor yields the eigenvectors and
 eigenvalues that represent an ellipsoidal dark matter halo.
@@ -417,7 +420,7 @@ triaxility is smaller as we move closer to the galactic disk.
 Next we want to test to what extend the global effect of decreasing
 triaxility in MHD simulations compared to the DMO sample 
 holds for individual halos. 
-We compute $\Delta_T\equiv T_{MHD}-T_{DMO}$ the difference between the
+We compute $\Delta T\equiv T_{\rm MHD}-T_{\rm DMO}$ the difference between the
 triaxility in the MHD and the DMO simulation for each individual halo. 
 Figure \label{fig:delta_triaxial_cumulative} shows the cumulative
 distribution at the same radii as in
