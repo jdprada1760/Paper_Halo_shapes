@@ -37,7 +37,7 @@ Volker Springel$^{2}$
 $^{1}$Departamento de F\'sica, Universidad de los Andes, Cra. 1 No.
 18A-10, Edificio Ip, Bogot\'a, Colombia.\\
 $^{2}$Heidelberg Institute for Theoretical Studies, Schloss-Wolfsbrunnenweg 35, D-69118 Heidelberg
-Germany.\\
+paperGermany.\\
 }
 
 % These dates will be filled out by the publisher
@@ -268,9 +268,6 @@ these halos as the DMO (Dark Matter Only) sample.
 \end{figure*}
 
 
-
-
-
 \begin{figure*}
 \includegraphics[width=0.9\columnwidth]{triaxialiy_distro_DM.pdf}
 \includegraphics[width=0.9\columnwidth]{triaxialiy_distro_MHD.pdf}
@@ -285,19 +282,6 @@ these halos as the DMO (Dark Matter Only) sample.
 \end{figure*}
 
 
-
-%\begin{figure*}
-%\centering
-%{\includegraphics[width=0.6\textwidth]{./pics/MHD_Vs_DM/halo16_new.png}}
-%\caption{Radial profile for the axial ratios $b/a$, $c/a$, and the triaxiality parameter
-%  $T$ at redshift $z=0$.
-%  The continous/dashed lines correspond to the MHD/DM simulations respectively.
-%  The vertical line corresponds to the virial radius.}
-%\label{fig:triaxial_radius}
-%\end{figure*} 
-
-
-
 \begin{figure}
 \includegraphics[width=0.9\columnwidth]{delta_triaxiality_distro.pdf}
 \caption{Cumulative fraction of the changes in the triaxility betwen
@@ -307,6 +291,37 @@ these halos as the DMO (Dark Matter Only) sample.
   However, the effect is more pronounced at smaller radii.}
 \label{fig:delta_triaxial_cumulative}
 \end{figure}
+
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{cumulative_alignment_DM.pdf}
+\includegraphics[width=1.0\textwidth]{cumulative_alignment_MHD.pdf}
+\end{center}
+\caption{Cumulative alignment}
+\label{fig:cumulative_alignment}
+\end{figure*}
+
+
+\begin{figure*}
+\begin{center}
+  \subfloat[DM shape at small radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_A_DM.pdf}} 
+  \subfloat[DM shape at large radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_A_MHD.pdf}} 
+\end{center}
+\caption{}
+\label{fig:triaxial_history}
+\end{figure*}
+
+
+\begin{figure*}
+\begin{center}
+  \subfloat[DM shape at small radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_B_DM.pdf}} 
+  \subfloat[DM shape at large radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_B_MHD.pdf}} 
+\end{center}
+\caption{}
+\label{fig:triaxial_history}
+\end{figure*}
+
 
 \section{Halo Shape Measurement}
 
@@ -323,8 +338,9 @@ the presence of small satelites.
 For this reason we measure the shape by taking
 volume-enclosed particles, rather than shell-enclosed.  
 This method yields results in good agreement to the isodensity
-contours for radii smaller than half the virial radius as explored by
-\citep{Vera-Ciro_et_al._2011}.
+contours in the inner halo region, roughly for radii smaller than one
+quarter the virial radius as explored by
+\citep{Vera-Ciro_et_al._2011}. 
 
 We measure the shape using the reduced inertia tensor \citep{Allgood_et_al._2006}, 
 
@@ -433,56 +449,32 @@ Figure \label{fig:delta_triaxial_cumulative}.
 
 \subsection{Shape evolution with cosmic time}
 
+In the previous section we stablished that DMO halos at $z=0$ have
+a steady and monotenouse trend towards decreasing triaxility with
+increasing radius.
+\cite{Vera-Ciro_et_al._2011} found that this  radial trend at $z=0$ 
+correlates with the halo shape as a function of cosmic time, i.e.
+the halo becomes less triaxial as cosmic time progresses. 
+This correlation was interpreted as each radial shell retaining memory
+of the accreting conditions at the virial radius at the time of
+collapse.
 
-\begin{figure*}
-  \includegraphics[width=\columnwidth]{./pics/Redshift/halo_27_DM_Z_correlation.png}
-  \includegraphics[width=\columnwidth]{./pics/Redshift/halo_24_level3_MHD_Z_Triax.png}
-  \caption{Radial profile at $z=0$ (dashed line) and 
-    the historical profile at the virial radius (colour line). 
-    Results for DM simulations on the left, for MHD on the right.{\bf
-      Update with halo 24}}
-  \label{fig:redshift_triaxial}
-\end{figure*}
+Here we use the six \texttt{level3} halos to measure to what extent
+the presence of baryons affect this memory effect.
+The left column of Figure \ref{fig:redshift_triaxial} shows the six
+halos in the triaxility plane. 
+The colour dots show the time evolution while the black line
+corresponds to the radial trend at $z=0$.
+The close overlap of the spatial and temporal trends confirms the
+memory effect found by \cite{Vera-Ciro_et_al.2011}.
 
- 
-\begin{figure*}
-  \subfloat[halo 16 DM]{\includegraphics[width=\columnwidth]{./pics/Redshift/halo_16_level3_DM_Z.png}}
-  \subfloat[halo 16 MHD]{\includegraphics[width=\columnwidth]{./pics/Redshift/halo_16_level3_MHD_Z.png}}
-  \caption{Radial profile (comoving) of axial ratios for halo 16 in
-    terms of redshift (color). This halo maintains its shape until
-    $z\approx 1$ obviating the systematic rounding effect in time from
-    asymmetric potentials. Each plot-line represents the radial
-    profile at a determined redshift. Conclussion: Mainly for b/a, it increases for:
-    (1) for bigger radii (fixed redshift)(2) for lower redshift (fixed
-    radius) It explains the correlation between radial profile and
-    history, but does not require that curves match in the triaxial
-    plane. {\bf En esta grafica el panel de abajo deberia ser la triaxialidad.}}
-  \label{fig:RedshiftGood}
-\end{figure*}
 
-We know that DM-only have a steady and monotonous
-trend towards larger sphericity with increasing radius. 
-This radial trend is mimicked when the shape is measured at the virial
-radius as a function of cosmic time.
-The halo should become rounder with decreasing redshift, this is
-expected by the continuous influence of the gravitational potential on
-a collisionless fluid \citep{Vera-Ciro_et_al._2011}. 
+In the MHD sample the memory effect is less evident. 
+The right column of Figure \ref{fig:redshif_triaxial} shows the
+corresponding results for the six halos in the MHD sample.
 
-We show in the left panel of Figure \ref{fig:redshift_triaxial} an
-example with this effect in Halo 27 of the DM simulations:
-the radial triaxiality at $z=0$ and the historical triaxiality at
-$R_{\rm vir}$ are correlated. 
-The right panel on the same Figure \ref{fig:redshift_triaxial}
-illustrates how this correlation is absent in MHD simulations. 
-
-This means that for DM-only halos one can approximate its shape at
-higher redshift by simply sampling its 
-current shape at a smaller radius. 
-This correlation seems to be prompted by the continous inside-out
-build-up of the dark matter halo; baryonic effects seem to jeopardize
-the apparent smoother growth in DM-only simulations.
-
-%Discuss if this correlation may be recovered if compared for example at Disk radius in stead of virial radius.\\
+%Discuss if this correlation may be recovered if compared for example
+%at Disk radius in stead of virial radius.\\ 
 
 
 \subsection{DM halo - Stellar Disk Alignment}
