@@ -305,27 +305,43 @@ these halos as the DMO (Dark Matter Only) sample.
 
 \begin{figure*}
 \begin{center}
-  \subfloat[DM shape at small radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_A_DM.pdf}} 
-  \subfloat[DM shape at large radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_A_MHD.pdf}} 
+  \subfloat[DM shape at small radius]{\includegraphics[width=0.35\textwidth]{Z_Triax_level3_set_A_DM.pdf}} 
+  \subfloat[DM shape at large radius]{\includegraphics[width=0.35\textwidth]{Z_Triax_level3_set_A_MHD.pdf}} 
 \end{center}
 \caption{}
-\label{fig:triaxial_history}
+\label{fig:triaxial_history_A}
 \end{figure*}
 
 
 \begin{figure*}
 \begin{center}
-  \subfloat[DM shape at small radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_B_DM.pdf}} 
-  \subfloat[DM shape at large radius]{\includegraphics[width=0.4\textwidth]{Z_Triax_level3_set_B_MHD.pdf}} 
+  \subfloat[DM shape at small radius]{\includegraphics[width=0.35\textwidth]{Z_Triax_level3_set_B_DM.pdf}} 
+  \subfloat[DM shape at large radius]{\includegraphics[width=0.35\textwidth]{Z_Triax_level3_set_B_MHD.pdf}} 
 \end{center}
 \caption{}
-\label{fig:triaxial_history}
+\label{fig:triaxial_history_B}
 \end{figure*}
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{correlation_T_MHD_disk.pdf}
+\end{center}
+\caption{A}
+\label{fig:disk_correlations}
+\end{figure*}
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.45\textwidth]{triaxiality_observations.pdf}
+\end{center}
+\caption{A}
+\label{fig:observations}
+\end{figure}
 
 
 \section{Halo Shape Measurement}
 
-%\subsection{The solid ellipsoid method}
 
 The DM halo shape at a fixed radius is an estimate of either
 the isopotential or isodensity surfaces.  
@@ -547,14 +563,6 @@ This rounding effect can be explained by gravitational effect of the
 flattened axisymmetric galactic disk. 
 It also explanes the weakness of this affect around $\approx 100$kpc,
 where the disk potential is weaker compared to the DM halo potential. 
-  
-\begin{figure}
-\centering
-\includegraphics[width=0.5\textwidth]{cumulative_alignment.pdf}
-\caption{Cumulative distribution of alignment $\cos\theta$ between the
-  minor axis of the dark matter halo at different radii and the
-  stellar disk.} \label{fig:alignment_out}
-\end{figure} 
 
 Following that linea reasoning, one would also expect that the rounding
 effect of baryons is related to some  galactic parameters such as its
@@ -591,18 +599,6 @@ $r<10$kpc.
   with varying slope and intercept parameters.\\
   
   The results of each method are presented below:
-  
-\begin{figure*}
-\centering
-\includegraphics[width=0.9\textwidth]{delta_T_correlations.pdf}
-\caption{Changes in the triaxiality at $R_{\rm vir}/8$ as a function of different halo and disk properties.}
-\label{fig:sphericity}
-\end{figure*}    
-
-\textbf{Actually we have not examined the relation of c/a in MHD halos
-  with some measure of c/a from the disk, that is something like
-  Zdisk/Rdisk. This actually would make more sense from a physical
-  point of view: effect of the potential. } 
 
 
 \textit{ Talk about source of triaxiality at the inner parts of the
@@ -622,85 +618,6 @@ $r<10$kpc.
 %  \label{fig:Star_Density_effect}
 %\end{figure}
 
-
-
-
-\subsection{Comparison against observational constraints}
-
-
-
-\begin{table*}
-\begin{tabular}{|l|cc|c|c|p{7cm}|}\hline
-Reference&$q_{\rho}$&$s_{\rho}$&$R$&$\theta$&
-Methodology\\ 
-\hline \hline \citet{Olling_and_Merrifield_2000}& $1.00$
-& $0.80$ &  $\simeq 8$kpc & $0^{\circ}$&Stellar dynamics and HI
-density. \\
-
-\multirow{2}{*}{\citet{Banerjee_and_Chanda_2011}}&${1}$&${1}$&$9$kpc&$0^{\circ}$&Method:
-HI
-gas. \\ &${0.5}$&${0.5}$&$24$kpc&$0^{\circ}$&Monotonical
-change between radial regimes.\\
-
-\citet{Loebman_et_al._2012}&${1.00}$&${0.47}$&$\sim
-20$kpc &$0^{\circ}$&Method: SDSS statistics\\
-
-\cite{Johnston_et_al._2005}&${1}$&$0.83-0.92$&$\lesssim
-60$kpc&$0^{\circ}$&Method: Sagittarius stream\\
-
-\citet{Bovy_et_el._2016}&${0.95}$&${0.95}$&$\lesssim
-20$kpc&$90^{\circ}$ & Stellar streams\\
-
-\citet{Deg_and_Widrow_2013}&$0.72$&$0.28$&
-$20$kpc-$60$kpc$ $&$90^{\circ}$&
-Mid-axis orientation. Sagittarius stream\\\hline\hline
-
-\citet{Abadi_et_al._2010} &${0.98}$&${0.85}$& & & Simulations. Almost
-  independent of radius. No feedback: boundary case\\\hline
-
-\end{tabular}
-\caption{{\bf Cuales son las incertidumbres? Con respecto a que eje
-    esta medido theta?}}
-\end{table*}
-
-
-\begin{table*}
-\begin{tabular}{|l|cc|c|c|p{7cm}|}\hline
-Reference&$q_{\phi}$&$s_{\phi}$&$R$&$\theta$&
-Methodology\\ \hline \hline 
-
-\citet{Bowden_et_al._2016}& 0.5-0.66 &0.5-0.66& 5kpc - 10 kpc& $90^{\circ}$&
-Weak constraint on prolate halo. SDSS stars dynamics.\\
-
-\multirow{2}{*}{\citet{Vera-Ciro_and_Helmi_2013}}&${1.00}$&${0.90}$&$\lesssim
-10$kpc&$0^{\circ}$ & Sagittarius stream \& LMC \\
-&${0.90}$&${0.80}$&$\gtrsim 10$kpc&$90^{\circ}$&
-Mid-axis orientation on the outside. \\
-
-\citet{Law_and_Majewski_2009}&${0.83}$&${0.67}$&
-$\lesssim 60$kpc&$90^{\circ}$&Mid-axis orientation. Sagittarius
-stream\\
-
-\citet{Law_and_Majewski_2010}&${0.99}$&${0.72}$&
-$20$kpc-$60$kpc$$&$90^{\circ}$&Mid-axis orientation, Sagittarius
-stream\\
-
-\citet{Deg_and_Widrow_2013} & $0.82$&$0.40$&
-$20$kpc $60$kpc$ $&$90^{\circ}$&
-Mid-axis orientation. Sagittarius stream\\\hline \hline
-
-\citet{Chua_et_al._2018}&${0.88\pm0.10}$&${0.70\pm0.11}$&$0.15R_{200}$&
-& Illustris\\
-
-\citet{Bryan_et_al._2013}&$0.84-0.86$&$0.66-0.70$&$R_{200}$& & 
-For different cosmologies and feedback recipies. Calculated from a fit
-at $M_\odot=10^12$\\\hline 
-
-\end{tabular}
-\caption{{\bf Cuales son las incertidumbres? Con respecto a que eje
-    esta medido theta?}}
-\end{table*}
-%\end{multicols}
 
 
 
