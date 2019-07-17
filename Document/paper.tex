@@ -376,7 +376,7 @@ these halos as the DMO (Dark Matter Only) sample.
   the galaxy with in a sphere of radius  $1$ kpc \citep{Pakmor17};
   the second column shows the disk to total mass ratio and the last
   column includes the disk optical radius defined to be the radius at which the
-  $B$-band surface brightness drops below 25 mag arcsec$^-2$ \citep{auriga}.
+  $B$-band surface brightness drops below 25 mag arcsec$^{-2}$ \citep{auriga}.
   The largest correlations are found for the two smaller radii and
   dilute as one approached $R_{200}$.
   Large and massive stellar disks with a low gas content are
@@ -643,6 +643,51 @@ In contrast at $0.25 R_{200}$ the angle between the two axis is
 $2\pm 3$ degrees without any extreme outlier.
 
 
+
+
+
+\section{Discussion}
+
+The first effect that we put in evidence in this paper is the effect
+of baryons in producing rounder DM halos.
+This effect has been already reported in other simulations \citep{Debattista08, Bryan13,
+  Butsky16, Chua19, Artale19}.
+The strength of the change depends on the numerical resolution, the
+method to resolve the hydrodynamics and the models describing star
+formation and stellar feedback.
+The key concept behind these results is that the baryon distribution
+influences and correlates with the dark matter halo shape.
+
+In order to explore this idea in the Auriga simulations we looked for
+correlations with stellar disk properties. 
+Looking into the measurements already reported by \cite{auriga} and
+\cite{pakmor17} we find three baryonic quantities that have the
+strongest correlation with DM halo triaxiality: the central gas
+density in a sphere of radius $1$kpc, the disk to total mass ratio and
+the optical radius.
+
+
+Figure \ref{fig:disk_correlations} summarizes the correlations of
+these quantities with the triaxility at five diferent radii.
+We ues the Spearmen's rank correlation coefficient to quantify the
+correlation strength.
+
+
+
+
+\citep{Debatistta08} shape aligment with respects to the disk changes
+but saturates beyond the disk radius.
+
+
+{\bf Comparison with other detailed simulations.}
+
+{\bf Comparison with other statistical simulations.}
+
+{\bf Comparison against observations.}
+
+{\bf Implications for observational studies in our Galaxy}
+
+\section{Conclusions}
 \section{Discussion and Conclusions}
 
 In this paper we measured the shape of thirty isolated Milky Way like 
@@ -667,108 +712,6 @@ This rounding effect can be explained by gravitational effect of the
 flattened axisymmetric galactic disk. 
 It also explanes the weakness of this affect around $\approx 100$kpc,
 where the disk potential is weaker compared to the DM halo potential. 
-
-Following that linea reasoning, one would also expect that the rounding
-effect of baryons is related to some  galactic parameters such as its
-component masses and radii. 
-We look for these kind of correlations and to find that the strongest
-can be found for the stellar density.
-However, the correlation is relatively low ({\bf cuanto vale el
-  coeficiente de correlation}) most likely due to the different
-formation histories.
-In other words, the effect of the baryonic disk on the shape of the DM halo
-does not fully explain the deviation from oblateness of MHD halos at
-$r<10$kpc. 
-
-{\bf Finalmente cuales son las cantidades disponibles en el disco?
-  cuales son las que muestran una mayor correlacion? Haria falta un
-  plot con todas las correlaciones y la mencion de alguna prueba de
-  machine learning del fit lineal para ver cuales son los parametros
-  mas importantes.}
-  
-  We measured the sphericity of a halo shape defined as the distance 
-  from the point that characterizes the shape in the triaxiality plane
-  to the point $(q=1,s=1)$, which represents a perfect sphere. Taking this 
-  as our metric of interest, the sphericity question becomes a search for
-  important variables and tendencies that affect this quantity. For this case,
-  given the small sample of 30 halos, we chose to study this problem with different 
-  3 methods to account for the lacking statistical consistency. We analyzed the effect
-  of the Star disk Radius, Baryonic fraction, Gas density, BH density, Gas Radius and
-  Star density.\\
-   
-  We started with a simple linear Lasso regression to force a classification of 
-  important variables. Then, we converted this problem in a binary classification problem
-  by partitioning the samples in two balanced groups according to the studied metric which was then fitted using Random forest.
-  Finally, we concluded this analysis with an MCMC sampling of the likelyhood of a linear model
-  with varying slope and intercept parameters.\\
-  
-  The results of each method are presented below:
-
-
-\textit{ Talk about source of triaxiality at the inner parts of the
-  halos (bar?). This source of triaxiality at the inner parts explains
-  why the axial ratios are $\approx 0.95$ and not exactly $1$. We
-  should also discuss that the decrease in the axial ratios for bigger
-  radii may actually be bigger/steeper but it is dimmed by the
-  contribution of inner parts.} 
-
-
-%\begin{figure}
-%  \includegraphics[width=\columnwidth]{./pics/Delta asphericity Vs Star Density.png}
-%  \caption{Difference in asphericities between MHD and DM shapes Vs
-%    Star Density of the simulation. Unsure about this graphic. Take
-%    delta asphericity as the strength of the rounding effect of
-%    baryons.}  
-%  \label{fig:Star_Density_effect}
-%\end{figure}
-
-
-
-
-Half of the observational constraints are computed in terms of
-isodensity contours, the other half in terms of isopotential contours.
-To compare our results against the second kind we must either
-translate the isodensity results or recompute in terms of isopotential
-regions.
-For this purpose, we run a simple iterative algorithm to find an
-approximation of the shape of the isopotential contour. 
-
-First, we calculate the mean and standard deviation of the potential over a
-spherical shell of width equals to $10\%$ of the radius at which it is
-sampled. 
-Then, we calculate the inertia tensor of particles with potential
-within $1\sigma$ around the mean potential and calculate its triaxial
-characterization with the reduced inertia tensor. 
-We repeat the
-process of calculating the potential mean and standard deviation until
-convergence is achieved with tolerance of $10^{-4}$. 
-
-In Figure \ref{fig:density_potential} we compare the two approaches to
-measure the axial rations and plot the analytic expectation for $q$, 
-$(1-q_{\phi})\approx \frac{1}{3}(1-q_{\rho})$
-\citep{Binney_and_Tremaine_2008}, taking the volume-enclosed axial
-ratios  as an approximation for the isodensity contour ratios
-$q_{\rho}$. 
-This plot is computed at four different radii.
-
-Although the analytic expression is meant to be used on the outer
-regions of logarithmic axisymmetric halos, it works well as a first
-approximation for nearly axisymmetric halos as those produced by our
-simulations 
-We find that the difference between the measured and the
-approximated isopotential axial ratios is not bigger than $quantity
-percent$.
-
-\section{Discussion}
-
-{\bf Comparison with other detailed simulations.}
-
-{\bf Comparison with other statistical simulations.}
-
-{\bf Comparison against observations.}
-
-{\bf Implications for observational studies in our Galaxy}
-
 
 \section*{Acknowledgements}
 This project has received funding from the European Union's Horizon
