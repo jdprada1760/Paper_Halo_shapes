@@ -66,21 +66,21 @@ distributions correlate with extended massive stellar disks and low gas
 densities.  
 We measure the alignment between the halo and the stellar disk and
 find almost perfect alignment at $0.25R_{200}\sim56$ kpc.   
-The alignment between the two components changes as a function of
-radius implying that the halo shape twists; this effect is almost absent in the dark
-matter only simulations. 
-We quantify the twisting effect wtih the standard deviation of the
+In some cases the alignment between the two components significantly
+changes as a function of radius implying that the halo shape twists;
+this effect is almost absent in the dark matter only simulations. 
+We quantify the twisting effect with the standard deviation of the
 angle between the minor axis of the disk and the halo for radii
-$\leq R_{200}$ to show that the twisting correlates positively with
+$\leq 0.5R_{200}$ to show that this effect correlates positively with
 extended stellar disks and low gas densities.
 In a comparison against observational constraints of dark matter halo
 triaxiality for the Milky Way we find that $20\%$ of halos our sample
 are consistent with observational results derived from the Pal 5 stream
 that favor $b/a\approx 1$ and $c/a>0.77$. Including baryons is a
 required element to achieve this level of agreement.
-In contrast, all simulations (dark matter only and with baryons) are at
-odds with the constrains derived from the Saggitarius stream that
-favor $b/a\approx 0.97$ and $c/a\approx0.44$.
+In contrast, none of the simulations (dark matter only and with
+baryons) can reproduce the constrains derived from the Saggitarius
+stream that favor $b/a\approx 0.97$ and $c/a\approx0.44$. 
 \end{abstract}
 
 % Select between one and six entries from the list of approved keywords.
@@ -97,25 +97,24 @@ dark matter
 \section{Introduction}
 
 The understanding of our Universe as a whole is greatly influenced by
-accurate observations and modeling of our Galaxy 
-Explaining the Galaxy's matter composition and kinematical state is 
-equivalent to figuring out its formation process in a cosmological
-context. 
-As a first approximation, the Milky Way's (MW) morphology and
+accurate observations and modeling of our Galaxy. 
+Explaining the matter budget and kinematical state of the Milky Way
+(MW) is  equivalent to figuring out its formation process in a
+cosmological context. 
+As a first approximation, the MW morphology and
 separation into global kinematically coherent components, such as its
 disk and bulge, can be used to support the  existence of a Dark Matter
 (DM) component to explain its dynamics around the solar neighborhood
-\citep{2000MNRAS.311..361O,2009PASJ...61..227S,2010JCAP...08..004C,2013ApJ...779..115B,Iocco15}.  
+\citep{2000MNRAS.311..361O,2009PASJ...61..227S,2010JCAP...08..004C,2013ApJ...779..115B,Iocco15}. 
 
-Improvements in the sensitivity of astronomical observations have 
-extended this kind of modelling to outter regions of our Galaxy by measuring
-the stellar streams resulting from infalling globular clusters or
+A more detailed description of the full three-dimensional MW
+gravitational potential is possible through the interpretation of 
+fossil records of stellar streams.
+These remanents, resulting from infalling globular clusters or
 satellite galaxies that got tidaly disrutpted by the gravitational
-potential of the Milky Way
-\citep{1998ApJ...495..297J,1999MNRAS.307..495H, 1999MNRAS.307..877T}. 
-The interpretation of such fossil records requires the the
-determination of the full three-dimensional gravitational potential of
-the Milky  Way.
+potential of the Milky Way, allow in principle tighter constrains 
+on the shape of the dark matter halo in outter regions of our Galaxy
+\citep{1998ApJ...495..297J,1999MNRAS.307..495H, 1999MNRAS.307..877T}.  
 
 The observational constraints on the gravitational potential shape can then
 be confronted against the expectations from different galaxy formation
@@ -129,12 +128,12 @@ typical or atypical in a cosmological context?
 These two questions have been difficult to address because for a long
 time it was difficult to produce realistic galactic disks within the
 CDM context.
-The success of such enterprise has ben the result of high numerical
+The success of such enterprise has been the result of high numerical
 resolution and the understanding that baryonic effects such as stellar
 feedback and black hole feedback play an important role in forming a
 galactic disk resembling the Milky Way.
 
-Along the way the experiments show that the baryonic effects also impact
+Along the way numerical experiments show that the baryonic effects also impact
 the dark matter halo shape making the halo rounder than it otherwise
 be in a dark matter only simulation
 \citep{Dubinski94,Debattista08,Kazantzidis10,Abadi10,Bryan13,Chua19,Artale19}. 
@@ -143,43 +142,45 @@ alignment between the stellar disk and the dark matter halo
 \cite{Bailin05,DeBuhr12,Debattista13,Gomez17}.
 
 
-Observationally, some studies prefer oblate configurations at small
+Observational constraints of the dark matter halo have been in
+conflict during the last decade.
+Some studies prefer oblate configurations at small
 distances around $\leq 20$ kpc
-\citep[see][]{Law_and_Majewski_2010,Bovy_et_el._2016,Loebman_et_al._2012,Olling_and_Merrifield_2000,Banerjee_and_Chanda_2011} 
-and more triaxial and prolate configurations on the outter distances
-$\geq 20$ kpc 
-\citep[see][]{Vera-Ciro_and_Helmi_2013,Law_and_Majewski_2009,Deg_and_Widrow_2013,Banerjee_and_Chanda_2011}.
-
-However, some  studies are inclined towards prolate configurations even at the inner
-parts of the halo \citep[see][]{Bowden_et_al._2016}, and
+\citep{Law_and_Majewski_2010,Bovy_et_el._2016,Loebman_et_al._2012,Olling_and_Merrifield_2000,Banerjee_and_Chanda_2011} 
+while others tend towards more triaxial and prolate configurations on
+the outter distances $\geq 20$ kpc
+\citep{Vera-Ciro_and_Helmi_2013,Law_and_Majewski_2009,Deg_and_Widrow_2013,Banerjee_and_Chanda_2011}.  
+Some other studies are inclined towards prolate configurations even at the inner
+parts of the halo \citep{Bowden_et_al._2016}, and
 although it previously seemed that a triaxial DM halo on the
-outerskirts would be necessary to fully explain the characterization
+outskirts would be necessary to fully explain the characterization
 of the Sagittarius stream \citep{Law_and_Majewski_2009}, recent studies
 questioned this claim by reporting inconsistencies with narrow stellar
 streams \citet{Pearson_et_al._2015} or finding that
 the relaxation of other constraints may make this claim unnecessary
-\citet{Ibata_et_al._2013}. 
-axisymmetrical to ensure the stability of a hydrodynamical disk
-embeded in a static DM halo. 
+\citet{Ibata_et_al._2013} axisymmetrical to ensure the stability of
+a hydrodynamical disk embeded in a static DM halo. 
 
-
-
-
-
-All these difficulties (enough numerical resolution, explicit
-cosmological context, appropriate feedback physics to produce
-realistic MW disks) have limited the studies that want to study the
-rounding effect of baryons in MW-like galaxies.
-In this work we overcome all these limitations by analyzing the
-results of state-of-the-art hydrodynamical simulations of isolated
-halos that resemble the Milky Way.
-We also perform a convergence study with simulation performed at
-different resolution levels and explicitly compare the role of DM only
-vs. DM+hydro on the MW DM halo shape.
-
+In this paper we address the question of measuring the shape of the DM
+halo in MW type galaxies from state-of-the-art simulations from the
+Auriga project.
+These simulations have large enough numerical resolution, and explicit
+cosmological context and an appropriate feedback physics to produce
+realistic MW disks.
+This paper is structured as follows. 
+In Section \ref{sec:numerical} we present the most relevant details of
+the simulations, in Section \ref{sec:method} we present the method
+that we use to measure the DM halo shape. 
+In Section \ref{sec:results} we present our results focusing on the
+radial shape trends at $z=0$ and the alignments with the stellar disk.
+We discuss our results in Section \ref{sec:discussion} to place them
+into the context of other numerical work, explore correlations of the
+shape with baryonic properties in the disk and finally make a direct
+comparison against observational constraints for the MW's dark matter halo shape.
+We finalize with our conclusions in Section \ref{sec:conclusions}.
 
 \section{Numerical Simulations}
-
+\label{sec:numerical}
 
 The Auriga project offers cosmological zoom in simulations of MW-sized 
 dark matter halos in a $\Lambda$CDM cosmology. 
@@ -451,7 +452,7 @@ atypical object in the $\Lambda$ CDM context.}
 
 
 \section{Halo Shape Measurement}
-
+\label{sec:method}
 
 The DM halo shape at a fixed radius is an estimate of either
 the isopotential or isodensity surfaces.  
@@ -511,6 +512,7 @@ $R_{200}=230\pm 15$kpc.
 For \texttt{Level3} halos we go down to distances of $\sim 0.2$ kpc.  
 
 \section{Results}
+\label{sec:results}
 
 \subsection{Radial trends at $z=0$}
 
@@ -571,79 +573,6 @@ distribution at the same radii as in
 Figure \label{fig:delta_triaxial_cumulative}. 
     
 
-%\subsection{Shape evolution with cosmic time}
-
-%In the previous section we stablished that DMO halos at $z=0$ have
-%a steady and monotonous trend towards decreasing triaxility with
-%increasing radius.
-%\cite{VeraCiro11} found that this  radial trend at $z=0$ 
-%correlates with the halo shape as a function of cosmic time, i.e.
-%the halo becomes less triaxial as cosmic time progresses. 
-%The hypotesis put forward by \cite{VeraCiro11} is that the correlation
-%raises as each radial shell retains memory of the accreting conditions
-%at the virial radius at the time of collapse.
-
-%Here we use the six \texttt{level3} halos to measure to what extent
-%the presence of baryons affect this memory effect.
-%In Figures \ref{fig:triaxial_history_A} and
-%\ref{fig:triaxial_history_B} we follow the shape evolution measured at
-%$R_{200}$ since redshift $z=1$ to the present, these results are
-%represened by the coloroured dots.
-%We compare this temporal evolution against the radial evolution at
-%$z=0$ represented by the dash black lines. 
-
-%The left column of Figure \ref{fig:redshift_triaxial} shows the six
-%halos in the triaxility plane. 
-%The colour dots show the time evolution while the black line
-%corresponds to the radial trend at $z=0$.
-%The left/right columns correspond to the DMO/MHD simulations, respectively.
-
-
-%We start by analyzing to what extent the memory effect is
-%already present in the DMO sample. 
-%The first feature that jumps out is that \texttt{Au-21} in the DMO
-%simulation does not have a simple shape evolution history.
-%By visual inspection we find that an extended merging substructure
-%intereacted in the main halo showing up in the shape measurements,
-%making it more difficult to interpret the memory hypothesis.
-%For this reason we exclude this halo from the analysis.
-
-%For the other five halos we find simpler temporal and spatial
-%evolution histories. 
-%Halo \texttt{Au-6} (Figure
-%\ref{fig:triaxial_history_A}) shows a broad
-%correlation between the two tracks; close to the cases of halos
-%\texttt{Aq-4-C} and \texttt{Aq-4-D} in \cite{VeraCiro11}.
-%The four other halos (\texttt{Au-16} in Figure
-%\ref{fig:triaxial_history_A}; \texttt{Au-23}, \texttt{Au-24},
-%\texttt{Au-27} in Figure \ref{fig:triaxial_history_B}) are four
-%cases where the temporal evolution if followed very closely by the
-%radial trends.
-%We conclude that in the DMO sample 4 out of the 5 high resolution
-%halos closely follow the memory hypothesis trends and the remaning
-%halo shows a reasonable correlation.
-
-%The situation in the MHD simulations is more diverse.
-%As expected by the results in the previous section the broad location
-%in the triaxility plane of the temporal and radial evolution in the
-%MHD simulation is completeley different from its DMO counterpart. 
-%In terms of the correlations expected by the memory hypothesis we see
-%two different trends.
-%We have the case of Halos \texttt{Au-6}, \texttt{Au-16} and
-%\texttt{Au-27} there is still a reasonable correlation between
-%temporal and radial evolution. 
-%However for halos \texttt{Au-23} and \texttt{Au-24} the radial trends
-%go in directions that are not even covered by the temporal evolution.
-
-%Taken at face value, these results show that it is not possible to
-%generalize the memory hypotesis to dark matter halos in MHD
-%simulations.
-%This means that some halos present a amnesia to its formation history,
-%more specifically there are cases where the radial shape profile at
-%present time does not have any correlation to its evolutionary
-%history. 
-
-
 \subsection{Alignments with the stellar disk}
 
 
@@ -691,6 +620,7 @@ $2\pm 3$ degrees without any extreme outlier.
 
 
 \section{Discussion}
+\label{sec:discussion}
 
 The first effect that we put in evidence in this paper is the effect
 of baryons in producing rounder DM halos.
@@ -827,6 +757,7 @@ feature in the $\Lambda$ CDM model \citep{2018MNRAS.478.5533F}.
 
 
 \section{Conclusions}
+\label{sec:conclusions}
 
 In this paper we measured the shape of thirty isolated Milky Way like 
 dark matter haloes simulated in the Auriga project using the zoom-in
