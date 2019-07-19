@@ -1,14 +1,12 @@
-\documentclass[a4paper,fleqn,usenatbib]{mnras}
+\documentclass[usenatbib]{mnras}
 \usepackage[T1]{fontenc}
 \usepackage{ae,aecompl}
-
 
 \usepackage{graphicx}	% Including figure files
 \usepackage{amsmath}	% Advanced maths commands
 \usepackage{amssymb}	% Extra maths symbols
 \usepackage{subfig}
 \usepackage{array}
-
 
 \usepackage{multirow}
 \usepackage{multicol}
@@ -20,20 +18,15 @@
 \newcommand{\kpc}{\,{\rm kpc}\,}
 
 
-\newenvironment{Table}
-   {\par\bigskip\noindent\minipage{\columnwidth}\centering}
-   {\endminipage\par\bigskip}
-
-\title[The shape of dark matter haloes at $z=0$ in Auriga]
-{Dark matter halo shape at $z=0$ in the Auriga simulations: radial
-  evolution and alignment with the stellar disk}
+\title[Dark matter halo shapes at $z=0$] {Dark matter halo shapes at
+  $z=0$ in the Auriga simulations} 
 \author[Jesus Prada,  Jaime E. Forero-Romero, Volker Springel ]{
 Jesus Prada,$^{1}$\thanks{E-mail: jd.prada1760@uniandes.edu.co}
 Jaime E. Forero-Romero,$^{1}$
 Volker Springel$^{2}$
 \\
 % List of institutions
-$^{1}$Departamento de F\'sica, Universidad de los Andes, Cra. 1 No.
+$^{1}$Departamento de F\'isica, Universidad de los Andes, Cra. 1 No.
 18A-10, Edificio Ip, Bogot\'a, Colombia\\
 $^{2}$Max-Planck-Institut f\"ur Astrophysik, Karl-Schwarzschild-Str. 1, D-85741 Garching, Germany\\
 }
@@ -52,8 +45,9 @@ $^{2}$Max-Planck-Institut f\"ur Astrophysik, Karl-Schwarzschild-Str. 1, D-85741 
 
 % Abstract of the paper
 \begin{abstract}
-We present shape measurements of dark matter halos at redshift $z=0$
-in a suite of 30 zoom-in simulations from the Auriga project. 
+We present shape measurements of Milky Way sized dark matter halos at
+redshift $z=0$ in a suite of 30 zoom simulations from the Auriga
+project. 
 We compare the results in full magnetohydrodynamics against dark
 matter only physics. 
 We find a strong influence of baryons in making dark matter halos
@@ -90,8 +84,8 @@ dark matter
 
 \section{Introduction}
 
-The understanding of our Universe as a whole is greatly influenced by
-accurate observations and modeling of our Galaxy. 
+Our physical picture of the Universe as a whole has be shaped by
+accurate observations and modeling of our own Galaxy. 
 Explaining the matter budget and kinematical state of the Milky Way
 (MW) is  equivalent to figuring out its formation process in a
 cosmological context. 
@@ -101,6 +95,7 @@ disk and bulge, can be used to support the  existence of a Dark Matter
 (DM) component to explain its dynamics around the solar neighborhood
 \citep{2000MNRAS.311..361O,2009PASJ...61..227S,2010JCAP...08..004C,2013ApJ...779..115B,Iocco15}. 
 
+
 A more detailed description of the full three-dimensional MW
 gravitational potential is possible through the interpretation of 
 fossil records of stellar streams.
@@ -108,7 +103,8 @@ These remanents, resulting from infalling globular clusters or
 satellite galaxies that got tidaly disrutpted by the gravitational
 potential of the Milky Way, allow in principle tighter constrains 
 on the shape of the dark matter halo in outter regions of our Galaxy
-\citep{1998ApJ...495..297J,1999MNRAS.307..495H, 1999MNRAS.307..877T}.  
+\citep{1998ApJ...495..297J,1999MNRAS.307..495H, 1999MNRAS.307..877T}
+than dynamical measurements close to the solar neighborhodd.
 
 The observational constraints on the gravitational potential shape can then
 be confronted against the expectations from different galaxy formation
@@ -119,6 +115,7 @@ triaxial DM halos. To what extent the CDM expectations are born out by
 observations in our Galaxy? Can the MW's DM halo shape be considered
 typical or atypical in a cosmological context?
 
+
 These two questions have been difficult to address because for a long
 time it was difficult to produce realistic galactic disks within the
 CDM context.
@@ -126,14 +123,16 @@ The success of such enterprise has been the result of high numerical
 resolution and the understanding that baryonic effects such as stellar
 feedback and black hole feedback play an important role in forming a
 galactic disk resembling the Milky Way.
-
 Along the way numerical experiments show that the baryonic effects also impact
 the dark matter halo shape making the halo rounder than it otherwise
 be in a dark matter only simulation
 \citep{Dubinski94,Debattista08,Kazantzidis10,Abadi10,Bryan13,Chua19,Artale19}. 
 High resolution simulations have also allowed detailed studies of the
 alignment between the stellar disk and the dark matter halo
-\cite{Bailin05,DeBuhr12,Debattista13,Gomez17}.
+\citep{Bailin05,DeBuhr12,Debattista13,Gomez17}.
+
+
+
 
 
 Observational constraints of the dark matter halo have been in
@@ -143,10 +142,12 @@ One can find studies favoring prolate
 \citep{LM10,Deg_and_Widrow_2013,Vera-Ciro_and_Helmi_2013} and
 spherical configurations \citep{Bovy16}.  
 Constraints from modeling of stellar streams discard the prolate
-configuration \citep{Pearson_et_al._2015} although some other studies
+configuration \citep{LM10,Pearson_et_al._2015,Bovy16} although some other studies
 still doubt that stellar streams can be used to constrain the halo
 shape once other assumptions, such as the density profile, are relaxed
 \citep{Ibata_et_al._2013}. 
+
+
 
 In this paper we contribute to the debate by reporting measurements of
 the DM halo shape in MW type galaxies from state-of-the-art simulations from the
@@ -165,6 +166,7 @@ into the context of other numerical work, explore correlations of the
 shape with baryonic properties in the disk and finally make a direct
 comparison against observational constraints for the MW's dark matter halo shape.
 We finalize with our conclusions in Section \ref{sec:conclusions}.
+
 
 \section{Numerical Simulations}
 \label{sec:numerical}
@@ -194,6 +196,8 @@ and its stellar feedback.
 The simulation also follows the formation and evolution of black holes
 together with the Active Galactic Nuclei feedback
 \citep{arepo,2013MNRAS.432..176P}. 
+
+
 
 
 The 30 zoom-in halos have a dark matter particle mass of $\sim 3\times
@@ -385,19 +389,14 @@ DMO sample.
 \begin{center}
 \includegraphics[width=0.45\textwidth]{triaxiality_observations.pdf}
 \end{center}
-\caption{Comparison of our results against other simulations
-  by \citet{Chua19} (Illustris) and observational constraints for the 
+\caption{Comparison of our results against 
+observational constraints for the 
 dark matter halo shape in the Milky Way by \citet{LM10} (LM10) and
 \citet{Bovy16} (BBFK16).   
-We report our results in the MHD simulations in such a way as to
-bracket the radii in the other estimates.
-We find that our results are broadly consistent with the Illustris
-simulations given the broad dispersion in both data sets.
-The consistency with the constraints by \citet{Bovy16} is marginal,
-only 1/5 of the halos in our sample seem to be consistent within the
-observational reults.
-The result by \citet{LM10} would place the Milky Way halo as an
-atypical object in the $\Lambda$ CDM context.} 
+We find that  1/5 of the halos in the MHD  sample are consistent with
+the constraints by \citet{Bovy16}.
+In contrast, none of the halos in the MHD and DMO seems to be
+consistent with the results by \citet{LM10}.}
 \label{fig:observations}
 \end{figure}
 
@@ -416,12 +415,12 @@ the presence of small satelites.
 For this reason we measure the shape by taking
 volume-enclosed particles, rather than shell-enclosed.  
 This method yields results in good agreement to the isodensity
-contours for radii $leq 140$ kpc as explored by
+contours for radii $\leq 140$ kpc as explored by
 \citep{VeraCiro11}.  
 
 
 In particular, we measure the shape using the reduced inertia tensor
-\citep{Allgood_et_al._2006},  
+\citep{Allgood06},  
 
 \begin{equation}
 I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
@@ -430,8 +429,7 @@ I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
 
 where the particle positions are measured from the minimum of the
 gravitational potential in each halo and each is weighted by the k-th
-particle distance 
-$d_k^2=x_k^2+y_k^2+z_k^2$.
+particle distance $d_k^2=x_k^2+y_k^2+z_k^2$.
 
 The diagonalization of this tensor yields the eigenvectors and
 eigenvalues that represent an ellipsoidal dark matter halo.
@@ -454,18 +452,18 @@ in halo shape we report in the following sections.
 This is the same method used to estimate the halo shape in the DM-only
 Aquarius simulations \citep{VeraCiro11}. 
 
-Following the convergence criterion by \cite{Vera-Crito_et_al.2011} we
+Following the convergence criterion by \cite{VeraCiro11} we
 restrict the sampling of the ellipsoidal parameters to radii  between
 $\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the  radius
 enclosing a sphere with 200 times the critical density of the Universe.
 On average, over the 30 halos in the \texttt{Level4} sample
 $R_{200}=230\pm 15$kpc. 
-For \texttt{Level3} halos we go down to distances of $\sim 0.2$ kpc.  
+
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Radial trends at $z=0$}
+\subsection{Radial trends}
 
 In the DMO sample we find that halos are rounder with increasing
 radius.
@@ -500,10 +498,12 @@ spherical.
 In Figure \ref{fig:triaxial_cumulative} we summarize the results at
 different radii using the cumulative distributions for the 
 triaxility parameter $T$ defined as 
+
 \begin{equation}
 T=\frac{a^2-b^2}{a^2-c^2}.
 \label{eq:triaxiality}
 \end{equation}
+
 The left panel of this Figure shows that in the DMO sample the
 triaxility has a median larger than $0.5$ at all radii, furthermore
 this median value increases as we move towards the inner part of the
@@ -665,7 +665,7 @@ contours (that could be compared against our results)
 They do not report any uncertainties for these two values. 
 Looking at their plots for the quality of fit criterion as a function
 of dark halo axial scales (their Figure 5), we choose a conservative $10\%$
-relative uncertaintyy
+relative uncertainty.
 One surprising element in their results is that  the major axis of the
 halo shape is perpendicular to the stellar disk plane.  
 
@@ -710,7 +710,7 @@ feature in the $\Lambda$ CDM model \citep{2018MNRAS.478.5533F}.
 \section{Conclusions}
 \label{sec:conclusions}
 
-In this paper we measured the shape of thirty isolated Milky Way like 
+In this paper we measured the shape of 30 isolated Milky Way like 
 dark matter haloes simulated in the Auriga project using the zoom-in
 technique. 
 The Auriga project simulated these halos with two different setups:
@@ -772,7 +772,9 @@ This project has received funding from the European Union's Horizon
 2020 Research and Innovation Programme under the Marie
 Sk\l{}odowska-Curie grant agreement No 734374. 
 
-
  \bibliographystyle{mnras}
  \bibliography{references}
+
 \end{document}
+
+
