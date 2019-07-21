@@ -49,21 +49,22 @@ We present shape measurements of Milky Way sized dark matter halos at
 redshift $z=0$ in a suite of 30 zoom simulations from the Auriga
 project. 
 We compare the results in full magnetohydrodynamics against dark
-matter only physics. 
+matter only simulations. 
 We find a strong influence of baryons in making dark matter halos
 rounder at all radii compared to its dark matter only counterparts.
 At distances $\lesssim 30$ kpc, rounder dark matter distributions
-correlate with extended massive stellar discs and low gas 
+correlate with extended massive stellar discs and low core gas 
 densities.  
-We measure the alignment between the halo and the stellar disc and
-find almost perfect alignment at $0.25R_{200}\sim56$ kpc.   
-In some cases the alignment between the two components significantly
-changes as a function of radius implying that the halo shape twists;
+We measure the alignment between the halo and the stellar disc at
+different radii and find almost perfect alignment at
+$0.25R_{200}\sim56$ kpc.    
+In some cases the alignment significantly changes as a function of
+radius implying that the halo shape twists; 
 this effect correlates with extended stellar discs and
 low gas densities and is almost absent in the dark matter only
 simulations.  
-In a comparison against observational constraints  we find that $20\%$
-of halos are consistent with observational results derived
+In a comparison against observational constraints we find that $20\%$
+of halos in our sample are consistent with observational results derived
 from the Pal 5 stream that favor an almost spherical shape.
 Including baryons is a required element to achieve this
 level of agreement. In contrast, none of the simulations (dark matter
@@ -448,17 +449,16 @@ After convergence we define a unique radius $R$ as the geometrical
 mean of the axial lenghts $R=(abc)^{1/3}$.
 We use this radial coordinate $R$ to parameterize the spatial changes
 in halo shape we report in the following sections.
-
 This is the same method used to estimate the halo shape in the DM-only
 Aquarius simulations \citep{VeraCiro11}. 
 
 Following the convergence criterion by \cite{VeraCiro11} we
-restrict the sampling of the ellipsoidal parameters to radii  between
-$\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the  radius
+restrict the sampling of the ellipsoidal parameters to radii between
+$\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the radius
 enclosing a sphere with 200 times the critical density of the Universe.
-On average, over the 30 halos in the \texttt{Level4} sample
-$R_{200}=230\pm 15$kpc. 
-
+On average, over the 30 halos in the sample $R_{200}=230\pm 15$kpc. 
+In our results we express the radius as a fraction of $R_{200}$ in
+order to have a consistent radius scale across all halos.
 
 \section{Results}
 \label{sec:results}
@@ -710,47 +710,65 @@ feature in the $\Lambda$ CDM model \citep{2018MNRAS.478.5533F}.
 \section{Conclusions}
 \label{sec:conclusions}
 
-In this paper we measured the shape of 30 isolated Milky Way like 
+In this paper we measured the shape of 30 isolated Milky Way sized
 dark matter haloes simulated in the Auriga project using the zoom-in
 technique. 
-The Auriga project simulated these halos with two different setups:
+The halos were with two different setups:
 dark matter only (DMO) simulation and full magnetohydrodynamics (MHD)
 including star formation and feedback.
 We used the shape measurement algorithm by \cite{Allgood06} on the
-dark matter halos of these two kinds of simulations to quantify the
-halo shape as a function of radius and the degree of aligment between
-the stellar disc and the halo.
+dark matter halos of these simulations to quantify the halo shape as a
+function of radius and the degree of aligment between the stellar disc
+and the halo. 
 
 We find that MHD halos are rounder than DMO halos at every radius.
-MHD halos tend towards more oblate shapes ($T<1/3$), while DMO halos
-tend towards more prolate shapes ($T>2/3$).  
+MHD halos tend towards more oblate, sometimes almost spherical, shapes
+($T<1/3$), while DMO halos tend towards more prolate shapes ($T>2/3$).  
 The rounding effect is more noticeable as one moves closer to galactic
 disc and strongly  correlates with baryonic properties of the disc
-More precisely, the triaxility is smaller for large and massive
+More precisely, the triaxility is smaller for extended and massive
 stellar discs with low gas densities at its core.
 
 We also measured the shape alignment of the halo with the stellar
-disc.
+disc at different radii.
 At a radius of $0.25R_{200}$ the alignment is almost perfect and
 degrades at smaller and larger distances.
-We found that in some halos the alignment betwen the stellar disc
-and dark matter halo changes noticeably with the radius.
+In some halos the alignment betwen the stellar disc and dark matter
+halo changes noticeably with radius. 
 This alignment evolution implies a radial twisting between the ellipsoids
 describing the halo shape. 
 We quantify this twist with the standard deviation of the angle
 between the two minor axis at radii below $\leq 0.5R_{200}$ and find
-that it strongly correlates with the disc size and the core gas
-mass density, there is only a weak correlation with the disc to
-total mass ratio in the disc.
+that the twisting strongly correlates with the disc size and the core
+gas mass density, there is only a weak correlation with the disc to
+total mass ratio.
 
 We compared our results against two observational constraints for the
 dark matter halo shape of the Milky Way. 
 The constraints are at two different radii and come from different
 observatinal tracers. 
 We find that $20\%$ halos in the MHD simulations are consistent with
-the constraints by \cite{Bovy16} at $\approx 19$kpc, while none of the
-halos, either in MHD or DMO, has some overlap with the shape
-constraints by \cite{LM10} at $\approx 40$kpc. 
+the constraints by \cite{Bovy16} at $\approx 19$kpc that correspond to
+an almost spherical halo, while none of the halos, either in MHD or
+DMO, has some overlap with the shape constraints by \cite{LM10} at
+$\approx 40$kpc that is closer to oblate.  
+
+
+From the purely numerical point of view, a better understading of the
+influence of baryons on the different properties we have measure  will
+certainly require to study how the halo and the disc co-evolved as a
+function of time. 
+\cite{VeraCiro11} advanced suggested the idea that the current dark
+matter halo shape strongly correlates with the time evolution of the
+halo as traced by the shape measured at the virial radius.
+The opposed trend of triaxiality as a functio of radius between the
+MHD and the DMO simulations, together with twsiting effect in some of
+the halos seems to suggest that this effect might no longer hold.
+
+Calibrating the effect of the cosmic web (both dark matter and gaseous)
+\citep{2014MNRAS.443.1090F,2017MNRAS.469..594B,2019MNRAS.487.1607G}
+could also be required to gain a full picture of this behaviour.  
+
 
 From the results presented in this work we advance the idea that the
 twisting shells in the density is a feature that deserves to be
@@ -759,13 +777,6 @@ stream data.
 The inclusion of a parameterization describing this degree of
 twisting might relax the conflict between the observational
 constraints and the numerical results. 
-
-From the purely numerical point of view a better understading of the
-disc-halo alignment details will certainly require to study how the
-halo and the disc co-evolved as a function of time.
-Calibrating the effect of the cosmic web (both dark matter and gaseous)
-\citep{2014MNRAS.443.1090F,2017MNRAS.469..594B,2019MNRAS.487.1607G}
-could also be required to gain a full picture of this behaviour.  
 
 
 \section*{Acknowledgements}
