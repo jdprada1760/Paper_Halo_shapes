@@ -286,7 +286,7 @@ DMO sample.
   with different physics, $\Delta T=T_{\rm MHD}-T_{\rm DMO}$.
   At the virial radius all halos become less triaxial in the MHD
   simulations, the change is stronger towards the halo center.
-  Only a small fraction of the halos ($\sim 1/10$) presents the
+  Only a small fraction of the halos ($\sim 1/15$) presents the
   opposite trend of becoming more triaxial towards the center.}
 \label{fig:delta_triaxial_cumulative}
 \end{figure}
@@ -384,8 +384,8 @@ DMO sample.
 \section{Halo Shape Measurement}
 \label{sec:method}
 
-The DM halo shape at a fixed radius is an estimate of either
-the isopotential or isodensity surfaces.  
+The DM halo shape is an estimate of either the isopotential or
+isodensity surfaces.   
 Observational inference models usually estimate the 
 isopotential contours which are probed by tracers (gas, stars), while
 simulations work with the isodensity contours which can be directly
@@ -418,7 +418,8 @@ root of the ${\bf I}$ eigenvalues and the direction of the principal
 axis are the corresponding eigenvectors 
 
 We start the calculations taking into account particles within a
-sphere of radius $R$ and then recharacterize the triaxial parameters
+sphere of radius $R_{\rm initial}$ and then recharacterize the
+triaxial parameters 
 by taking into account particles within an ellipsoid of semi-axes
 $r,r/q,r/s$ and re-scaled distance $d^2=x^2+(y/q)^2+(z/s)^2$, where $q
 = b/a$ and $s=c/a$ are the previously calculated axial ratios. 
@@ -434,15 +435,22 @@ Aquarius simulations \citep{VeraCiro11}.
 Following the convergence criterion by \cite{VeraCiro11} we
 restrict the sampling of the ellipsoidal parameters to radii between
 $\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the radius
-enclosing a sphere with 200 times the critical density of the Universe.
-On average, over the 30 halos in the sample $R_{200}=230\pm 15$kpc. 
+computed enclosing a sphere with 200 times the critical density of the
+Universe. 
 In our results we express the radius as a fraction of $R_{200}$ in
-order to have a consistent radius scale across all halos.
+order to have a self-consistent dimensionless radius scale across all
+halos. 
+Given the small variance across halos, each dimensionless radius is associated with
+a physical value with a mean value and a standard deviation.
+For instance, over the 30 halos in the sample, the dimensionless
+radius $R_{200}$ corresponds to a physical distance of $230\pm 16$
+kpc.  
+
 
 \section{Results}
 \label{sec:results}
 
-\subsection{Radial trends}
+\subsection{Triaxiality}
 
 In the DMO sample we find that halos are rounder with increasing
 radius.
@@ -460,19 +468,15 @@ The outer part of the halo is systematically rounder than its inner
 region. 
 Nevertheless the halo shape can still be considerated to be prolate at
 all radii. 
-These plots confirm the results already reported in the
-literature \citep{VeraCiro11}.
 
 A different picture presents itself in the MHD sample.
 There all halos become rounder at all radii than its DMO
-counterpart.
+version.
 The lower panel in Figure \ref{fig:slices} can be directly compared to
 its MHD counterpart; there we observe how at large radii the halo
-becomes almost spherical. 
+becomes oblate and almost spherical. 
 The right panel in Figure \ref{fig:triaxiality_plane} shows the
 results for the 30 halos in the MHD sample.
-This time the bulk of the halos can be considered oblate and close to
-spherical. 
 
 In Figure \ref{fig:triaxial_cumulative} we summarize the results at
 different radii using the cumulative distributions for the 
@@ -483,28 +487,37 @@ T=\frac{a^2-b^2}{a^2-c^2}.
 \label{eq:triaxiality}
 \end{equation}
 
-The left panel of this Figure shows that in the DMO sample the
-triaxility has a median larger than $0.5$ at all radii, furthermore
-this median value increases as we move towards the inner part of the
+The left panel of Figure \ref{fig:triaxial_cumulative} shows that in
+the DMO sample the triaxility has a median larger than $2/3$ (a
+typical value that marks the transition from triaxiality to
+prolateness) at all radii. 
+Furthermore this median value increases as we move towards the inner part of the
 halo.
-The right panel shows the exact complementary picture in the MHD
-sampe.
-There the median triaxility is alwas smaller than $0.5$ and this
-triaxility is smaller as we move closer to the galactic disc.
+The right panel shows how the correlations in the MHD simulations go
+in the opposite direction with respect to DMO result.s
+There the median triaxility is alwas smaller than $1/3$ (a typical
+values that marks the transition from triaxility to prolateness) and this
+median value decreases as we move towards the inner part of the halo.
 
-
-To quantify to what extend the global effect of decreasing
-triaxility in MHD simulations compared to the DMO sample 
-holds for individual halos. 
-We compute $\Delta T\equiv T_{\rm MHD}-T_{\rm DMO}$ the difference between the
-triaxility in the MHD and the DMO simulation for each individual halo. 
+We now quantify this change in triaxility at the level of individual halos.
+We compute $\Delta T\equiv T_{\rm MHD}-T_{\rm DMO}$ to quantify the
+change between the triaxility in the MHD and the DMO simulation.
 Figure \label{fig:delta_triaxial_cumulative} shows the cumulative
 distribution at the same radii as in
-Figure \label{fig:delta_triaxial_cumulative}. 
-    
+Figure \label{fig:delta_triaxial_cumulative}.  
+From this Figure we observe that at $R_{200}$ all the halos have
+reduced its triaxility include baryonic physics.
+At smaller radii this general trend continues, although there is a
+small fraction ($\approx 1/15$) of halos that slightly increased their
+triaxility with MHD physics. 
+However, this small fraction correspond to halos that already were
+outliers in the DMO sample and had triaxilities around $1/3$,
+considerably lower than its parent sample.
 
-\subsection{Alignments with the stellar disc}
 
+
+
+\subsection{Halo-disc alignments}
 
 A common assumption in observational models of the MW DM halo is that
 its minor axis is perfectly aligned with the stellar disc minor axis.
