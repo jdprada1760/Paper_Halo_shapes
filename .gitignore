@@ -1,2 +1,8 @@
 *.ipynb_checkpoints*
 *.DS_Store
+*.bbl
+*.log
+*.out
+*.aux
+*.blg
+*~
