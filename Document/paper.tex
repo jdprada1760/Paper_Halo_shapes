@@ -174,10 +174,11 @@ We finalize with our conclusions in Section \ref{sec:conclusions}.
 
 The Auriga project offers cosmological zoom in simulations of MW-sized 
 dark matter halos in a $\Lambda$CDM cosmology. 
-This simulations come in two versions: dark matter only (DMO) and
-baryonic physics including magetohydrodynamics (MHD).
+This simulations come in two versions: dark matter only and
+baryonic physics including magetohydrodynamics.
 A detailed description of the simulations and their disc properties
-can be founc in \citep{auriga}, here we summarize its main features.
+can be found in \citep{auriga}.
+Here we summarize its main features.
 
 The objects in the simulations were selected from a set of 30
 isolated halos in the Evolution and Assembly of GaLaxies and their
@@ -185,7 +186,7 @@ Environments (EAGLE)  project \citep{Eagle}.
 These halos were randomly selected from a sample of the most isolated
 halos at $z=0$ whose virial mass $M_{200}$ was between $10^{12}M_\odot$ and
 $2\times 10^{12}M_\odot$. 
-The cosmological parameters in these simulatins correspond to
+The cosmological parameters in these simulations correspond to
 $\Omega_m=0.307$, $\Omega_b=0.048$, $\Omega_\Lambda=0.693$ and a
 dimensionless Hubble parameter $h=0.6777$ \citep{2014A&A...571A..16P}
 
@@ -194,11 +195,9 @@ zoom-in technique with varying physical realism using the moving-mesh AREPO code
 that includes gravity, ideal magnetohydrodynamics,  phenomenological
 descriptions for star formation, chemical enrichment from supernovae
 and its stellar feedback.   
+\citep{arepo,2013MNRAS.432..176P}.
 The simulation also follows the formation and evolution of black holes
 together with the Active Galactic Nuclei feedback
-\citep{arepo,2013MNRAS.432..176P}. 
-
-
 
 
 The 30 zoom-in halos have a dark matter particle mass of $\sim 3\times
@@ -367,35 +366,19 @@ DMO sample.
 \begin{center}
 \includegraphics[width=0.9\textwidth]{correlations_angles_alignment_MHD.pdf}
 \end{center}
-\caption{Changse of angle alignment of the dark
-  matter halo and stellar disc at two different radii ($R_{200}/16$
-  and $0.25R_{200}$) as a function of the baryonic disc properties
-  already explored in Figure \ref{fig:disc_correlations}.  
-  Figure \ref{fig:cumulative_alignment} showed that maximum alignment
-  occurs at $0.25R_{200}$ while in the inner regions ($R_{200}/16$)
-  considerable missalignments occurr.
- at different radii
- and baryonic disc properties. 
- The label with the $\rho$ value corresponds to the Spearman’s rank correlation coefficient. }
+\caption{Twisting in the halo-disc alingment as a function of the same
+  baryonic disc properties in Figure \ref{fig:disc_correlations}.
+  The label with the $\rho$ value corresponds to the Spearman's rank
+  correlation coefficient.
+  The line is the best linear minimum squares fit.
+  In this case the disc to total mass ratio does not correlate stronly
+  with the alignment twisting.
+  The gas density at the center and the disc optical radius still show
+  a strong correlation.}
 \label{fig:alignment_correlations}
 \end{figure*}
 
 
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{triaxiality_observations.pdf}
-\end{center}
-\caption{Comparison of our results against 
-observational constraints for the 
-dark matter halo shape in the Milky Way by \citet{LM10} (LM10) and
-\citet{Bovy16} (BBFK16).   
-We find that  1/5 of the halos in the MHD  sample are consistent with
-the constraints by \citet{Bovy16}.
-In contrast, none of the halos in the MHD and DMO seems to be
-consistent with the results by \citet{LM10}.}
-\label{fig:observations}
-\end{figure}
 
 
 \section{Halo Shape Measurement}
@@ -702,6 +685,22 @@ triaxiality of the 11 classical satellites of the MW ($c/a\approx
 also oriented perpendicular to the MW plane, another highly unusual
 feature in the $\Lambda$ CDM model \citep{2018MNRAS.478.5533F}.
 
+
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{triaxiality_observations.pdf}
+\end{center}
+\caption{Comparison of our results against 
+observational constraints for the 
+dark matter halo shape in the Milky Way by \citet{LM10} (LM10) and
+\citet{Bovy16} (BBFK16).   
+We find that  1/5 of the halos in the MHD  sample are consistent with
+the constraints by \citet{Bovy16}.
+In contrast, none of the halos in the MHD and DMO seems to be
+consistent with the results by \citet{LM10}.}
+\label{fig:observations}
+\end{figure*}
 
 \section{Conclusions}
 \label{sec:conclusions}
