@@ -346,7 +346,7 @@ DMO sample.
   and baryonic disc properties. 
   The label with the $\rho$ value corresponds to the Spearman's rank
   correlation coefficient.
-  The line is the best linear minimum squares fit.
+  The line is the best minimum squares fit to a line.
   The x-axis in the first column is the gas density at the center of
   the galaxy with in a sphere of radius  $1$ kpc \citep{Pakmor17};
   the second column shows the disc to total mass ratio and the last
@@ -369,7 +369,7 @@ DMO sample.
   baryonic disc properties in Figure \ref{fig:disc_correlations}.
   The label with the $\rho$ value corresponds to the Spearman's rank
   correlation coefficient.
-  The line is the best linear minimum squares fit.
+  The line is the best minimum squares fit to a line.
   In this case the disc to total mass ratio does not correlate stronly
   with the alignment twisting.
   The gas density at the center and the disc optical radius still show
@@ -431,11 +431,19 @@ in halo shape we report in the following sections.
 This is the same method used to estimate the halo shape in the DM-only
 Aquarius simulations \citep{VeraCiro11}. 
 
-Following the convergence criterion by \cite{VeraCiro11} we
-restrict the sampling of the ellipsoidal parameters to radii between
-$\sim 2$kpc and $R_{200}$, where  $R_{200}$ correspond to the radius
+Following the convergence criterion by \cite{VeraCiro11} in DM only simulations
+we restrict the measurement of the ellipsoidal parameters to radii
+between $2$kpc and $R_{200}$ where  $R_{200}$ corresponds to the radius
 computed enclosing a sphere with 200 times the critical density of the
 Universe. 
+This scale is similar to the gravitational smoothing lenght for
+stellar particles. 
+For this reason, in order to make the DM halo shape results comparable
+against stellar disc shape measurements, we report our DM halo shape
+results above $10$ kpc.
+For the shape of the stellar disk we include all stellar particles
+within a radius of $0.01R_{200}$, that is $\approx 23$kpc. 
+
 In our results we express the radius as a fraction of $R_{200}$ in
 order to have a self-consistent dimensionless radius scale across all
 halos. 
@@ -627,38 +635,41 @@ gas density at its core show the most coherent halo shapes.
 
 The first effect that we put in evidence in this paper is the effect
 of baryons in producing rounder DM halos.
-The strength of the change depends on the numerical resolution, the
-method to resolve the hydrodynamics and the models describing star
-formation and stellar feedback \citep{Debattista08, Bryan13, Butsky16,
-  Chua19, Artale19}.  
+This effect has been already widely reported in the literature.
+It has been found that the strength of the change depends on the
+numerical resolution, the method to resolve the hydrodynamics and the
+models describing star formation and stellar feedback
+\citep{Bailin05,Debattista08, Bryan13, Butsky16, Chua19, Artale19}.  
 The key concept unifying these results is that the baryon distribution
 influences and correlates with the dark matter halo shape. 
-Here we find that the broad tendency is that massive stellar discs
-correlate with spherical dark matter distributions. 
+Indeed, as we presented in the previous section on the correlations
+with disc properties, we find that the broad tendency is that extended
+massive stellar discs correlate with spherical dark matter
+distributions.  
 
-
-
-
-\cite{Bailin05} studied the disc halo alignmnent as a function of
-radius.
-\cite{Gomez17} studied this in Auriga.
-\cite{Debattista13} reported a similar twisting effect, but only at radii smaller
-than the disc radius. 
-At radii larger than the disc radius, they find, the dark matter
-shells stop twisting. 
-\cite{JingSuto02} also reported shell alignment twisting in their dark
+In contrast, it is more difficult to put into a broader context our
+results on the halo-disc alignment.
+\cite{JingSuto02} reported a shell alignment twisting in their dark
 matter only simulations as measured in the direction changes of large
 and medium shape axis. 
 They only had three high resolution MW-like halos (with
 $\sim 10^{6}$ inside the virial radius) and could not make a
 statistical statement about the impact of this effect.
-However, they the twisting as an artifact resulting from high values of the
-$c/b$ ratios that make the determination of the medium axis boisy.
-Could then high triaxility values explain the twisting as a result of
-erratic axis directions? 
-If the triaxiality were the main culprit behind the twisting, the
-correlation between the two quantities should be constant at every
-radii.
+However, they see the twisting as an artifact resulting from high values of the
+$b/a$ ratios that make the determination of the medium axis noisy.
+For that reason we measured the twisting using the minor axis
+alignments, however they do not report these alignments
+
+
+\cite{Bailin05} used seven hydrodinamical simulations studied the disc
+halo alignmnent as a function of radius.
+
+\cite{Gomez17} studied this in Auriga.
+\cite{Debattista13} reported a similar twisting effect, but only at radii smaller
+than the disc radius. 
+At radii larger than the disc radius, they find, the dark matter
+shells stop twisting. 
+
 In Figure \ref{fig:alignment_correlations} we already showed that this
 correlation strongly depends on radius, we conclude that high
 triaxiality values cannot be the full explanation.
