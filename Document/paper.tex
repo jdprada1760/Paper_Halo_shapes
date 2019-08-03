@@ -195,6 +195,21 @@ DMO sample.
 
 
 \begin{figure*}
+\includegraphics[width=0.9\textwidth]{shape_resolution.pdf}
+\caption{Axial ratios for the six halos simulated at two different
+  resolutions with two different physics (DMO and MHD). 
+  In DMO simulations there is a good agreement between the two
+  resolutions (L3 and L4) at all radii down to scales of $\approx 1$
+  kpc from the center. 
+  In MHD simulations there are noticeable differences at scales below
+  $\approx 10$ kpc. 
+  In this paper we only report results at scales larger $\approx 16$ kpc
+  ($R_{200}/16$).}
+\label{fig:resolution}
+\end{figure*}
+
+
+\begin{figure*}
 \includegraphics[width=0.45\textwidth]{level4_DM_halo_24_2.png}
 \includegraphics[width=0.45\textwidth]{level4_DM_halo_24_4.png}
 \includegraphics[width=0.45\textwidth]{level4_MHD_halo_24_2.png}
@@ -421,24 +436,43 @@ Aquarius simulations \citep{VeraCiro11}.
 
 Following the convergence criterion by \cite{VeraCiro11} in DM only simulations
 we restrict the measurement of the ellipsoidal parameters to radii
-between $2$ kpc and $R_{200}$ where  $R_{200}$ corresponds to the radius
+between $1$ kpc and $R_{200}$ where  $R_{200}$ corresponds to the radius
 computed enclosing a sphere with 200 times the critical density of the
 Universe. 
-This scale is similar to the gravitational smoothing length for
-stellar particles. 
+{\bf However, this scale is similar to the gravitational smoothing length
+for stellar particles.
+For this reason we use the Level3 simulations performed at higher
+resolution to gauge the convergence of the shape measurements in the
+MHD simulations.
+
+Figure \ref{fig:resolution} shows the results for the six halos
+available at the higher Level3 resolution and the corresponding
+halos at our baseline Level4 resolution. 
+The dotted lines compare the DMO simulations showing that down to
+scales of $1$ kpc the two simulations give comparable results.
+In MHD simulations the situation is different, as expected. 
+With the exception of Au-27 the shape ratios $b/a$ and $c/a$ start
+to distantiate from each other for radii smaller than $15$ kpc.
+Above these radii, the differences between the triaxility values at
+Level4 and Level3 in MHD simulations are small and never exceed $0.1$.} 
+
 For this reason, in order to make the DM halo shape results comparable
-against stellar disc shape measurements, we report our DM halo shape
-results above $10$ kpc.
-We characterize the stellar disk by measuring the angular momentum vector using the $10\%$ oldest stellar particles.
+against stellar disc shape measurements, we report all our shape
+results above $10$ kpc. 
+
 
 In our results we express the radius as a fraction of $R_{200}$ in
 order to have a self-consistent dimensionless radius scale across all
 halos. 
-Given the small variance across halos, each dimensionless radius is associated with
-a physical value with a mean value and a standard deviation.
+Given the small variance across halos, each dimensionless radius is
+associated with a physical value with a mean value and a standard deviation.
 For instance, over the 30 halos in the sample, the dimensionless
 radius $R_{200}$ corresponds to a physical distance of $230\pm 16$
 kpc.  
+Finally, we also measure the alignment of the halo shape against the
+stellar disc angular momentum. 
+We measure the angular momentum vector using the $10\%$ oldest stellar
+particles within the virial radius.  
 
 
 \section{Results}
@@ -898,12 +932,6 @@ Sk\l{}odowska-Curie grant agreement No 734374.
 \appendix
 \section{AS}
 \label{appendix:physical}
-
-\begin{figure*}
-\includegraphics[width=0.9\textwidth]{shape_resolution.pdf}
-\caption{A}
-\label{fig:resolution}
-\end{figure*}
 
 
 
