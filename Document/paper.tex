@@ -398,7 +398,8 @@ Au-30 & 0.89 & 0.73 & 0.78 & 0.64 & 0.69 & 0.53 & 0.80 & 0.58 & 0.91 & 0.63\\
 \begin{center}
 \includegraphics[width=1.0\textwidth]{correlations_twisting_triaxiality_MHD.pdf}
 \end{center}
-\caption{Twisting in the halo-disc alignment (measured as the standard deviation of the alignment angles)
+\caption{Twisting in the halo-disc alignment (measured as the standard
+  deviation of the alignment angles at four different radii)
   as a function of the halo triaxialiy at the radius indicated
   in each panel's title.
   The label with the $\rho$ value corresponds to the Spearman's rank
@@ -610,7 +611,7 @@ The middle panel in the same Figure~\ref{fig:triaxial_cumulative}
 shows how the trends in the MHD simulations go 
 in the opposite direction with respect to the DMO results.
 There the median triaxiality is always smaller than $1/3$ (a typical
-value marking the transition from triaxiality to prolateness) and this
+value marking the transition from oblateness to triaxiality) and this
 median value decreases as we move towards the inner part of the halo.
 
 We now quantify this change in triaxiality at the level of individual halos.
@@ -652,8 +653,9 @@ with the minor axis of its dark matter halo, although some outliers
 are present in the sample.
 
 In six halos the alignment changes significantly as a
-function of radius,  
-as  can be seen by the twisting in the shape ellipsoids. 
+function of radius produced by the twisting in the shape ellipsoids. 
+In contrast, the DMO simulations show coherent halo shapes as a
+function of radius without twisting. 
 Because we are dealing with oblate halos $b/a\approx 1$, note that the
 directions corresponding to the medium and major axis could be subject
 to noise. 
@@ -673,14 +675,16 @@ The correlation between twisting and triaxiality also changes with
 radius as measured by the Spearman's rank correlation coefficient.
 The largest correlation is obtained for the halo triaxiality measured at
 $0.12R_{200}$. 
-The most important consequence of this changing degree in correlation
-is that twisting cannot be explained only by large triaxiality values
-and a possibly noisy determination of the shape axis.
+The most important consequence of this changing degree of positive
+correlation is that twisting cannot be explained only by small
+triaxiality (large asphericity) values and a possibly noisy
+determination of the shape axis. 
 
 \subsection{Correlation with baryonic disc properties}
 
 The presence of baryons produces rounder dark matter halos than found for the 
-corresponding DMO \textbf{}counterpart. To better understand this relationship we examine the correlation
+corresponding DMO counterpart. 
+To better understand this relationship we examine the correlation
 between halo shape and baryonic disc properties.  
 Looking into the measurements already reported by \cite{auriga} and
 \cite{Pakmor17}, we find three baryonic quantities that have the
@@ -691,16 +695,15 @@ the optical radius.
 Figure~\ref{fig:disc_correlations} shows the correlations of
 these quantities with the triaxiality at five different radii.
 We use the Spearmen's rank correlation coefficient to quantify the
-correlation strength. We find that the strongest correlations are found with the halo shape
+correlation strength. 
+We find that the strongest correlations are found with the halo shape
 measured at radii smaller than $0.12\, R_{200}$.
 The  trend is such that halos with large triaxiality correlate with
 high gas density, and stellar discs with low mass and small size. 
 In turn, massive and large stellar discs with low density of
 gas in their cores correlate with low halo triaxiliaty. 
 
-In some cases, the halo shape also twists in the presence of baryons, as opposed to
-the situation in DMO simulations where the shape is coherent as a
-function of radius. In Figure~\ref{fig:twisting_correlations}, we show the correlation
+In Figure~\ref{fig:twisting_correlations}, we show the correlation
 between twisting and the same baryonic properties that showed a high
 degree of correlation with the triaxiality.
 In this case the disc to total ratio does not have a significant
@@ -709,8 +712,9 @@ at the core are the most correlated.
 The correlation is such that extended stellar discs with a very low
 gas density at their cores show the most coherent halo shapes.  
 
-Recently, \citet{2017MNRAS.469..594B} reported that MW-like DM haloes can
-be roughly split into two distinct families: stalled and accreting.
+Recently, \citet{2017MNRAS.469..594B} used five zoom simulations 
+to report that MW-like DM haloes can be roughly split into two
+distinct families: stalled and accreting. 
 Stalled haloes assembled early and have remained almost unchanged
 in the last $7$ Gyr, while accreting halos have been growing
 constantly. \citet{2017MNRAS.469..594B} also link the two populations to
@@ -722,13 +726,16 @@ halos be linked to this dicotomy?
 
 In Figure~\ref{fig:twisting_age} we show the correlation between the
 twisting and the age of the bulge, the age of the stellar disc, and the
-DM halo formation redshift. The ages are estimated directly as the mean 
-value in the stellar age distribution for each component, while the formation redshift is
-defined as the redshift at which the halo has for the first time surpassed half of its final $z=0$
-mass. In the three cases we find a correlation between age and twisting
+DM halo age.
+We estimate the stellar ages  directly as the mean value in the
+stellar age distribution for each component, while the
+DM halo age corresponds to the lookback time at which the halo
+consolidated half of its present mass.  
+In the three cases we find a correlation between age and twisting
 that goes in the direction claimed by \citet{2017MNRAS.469..594B}:
 components with early assembly (i.e. stalled halos) have a smaller degree of
-twisting. A detailed study to interpret this with respect to the cosmic 
+twisting. 
+A detailed study to interpret this with respect to the cosmic 
 web location of the halos is however beyond the scope of this paper.
 
 \section{Discussion}
@@ -763,43 +770,39 @@ with disc properties, we find a clear tendency that extended
 massive stellar discs correlate with spherical dark matter
 distributions.  
 
-% JEFR I've commented this part because the plots are showing the 
-% alignment with the disc angular momentum not shape. 
-% This part has to be adjusted accordingly.
-%\cite{JingSuto02} reported a shell alignment twisting in their dark
-%matter only simulations as measured in the direction changes of large
-%and medium shape axis. 
-%They only had three high resolution MW-like halos (with
-%$\sim 10^{6}$ inside the virial radius) and could not make a
-%statistical statement about the impact of this effect.
-%However, they see the twisting as an artifact resulting from high values %of the
-%$b/a$ ratios that make the determination of the medium axis noisy.
-%For that reason we measured the twisting using the minor axis
-%alignments, however they do not report these alignments.
+The second part of our findings correspond to the disc-halo alignment.
+The dominant trend is that of a strong alignment between
+the disc and the dark matter halo shape at all radii. 
+In six halos of our sample we find a chaning alignment as a function
+of radius.
+This implies a twisting in the halo shape as a function of
+radius.
 
+Twisting has been also reported as an uncommon feature in some 
+simulated systems found in the literature. 
+\cite{JingSuto02} reported a shell alignment twisting in their dark
+matter only simulations as measured in the direction changes of large
+and medium shape axis. 
+They only had three high resolution MW-like halos (with
+$\sim 10^{6}$ inside the virial radius) and could not make a
+statistical statement about the impact of this effect.
+However, they see the twisting as an artifact resulting from high
+values  of the $b/a$ ratios that make the determination of the medium
+axis noisy, an effect that we have demonstrated can be discarded for
+our simulations.
+\cite{Bailin05} used seven hydrodynamic simulations to study the disc
+halo alignment as a function of radius.
+For radii smaller than $0.1R_{200}$ they find a strong global
+alignment between the halo and the disc.
+However, in some halos, at larger radii the angle between the
+components twists resulting in a weaker correlation between the disk
+and the halo shape. 
+Considering that twisting is not present in our DMO simulations, it is
+very likely that the detailed radial dependence of the alignments
+between the disc and the halo depends on the hydrodynamics and
+feedback implementations. 
 
-%\cite{Bailin05} used seven hydrodynamic simulations studied the disc
-%halo alignment as a function of radius.
-%For radii smaller than $0.1R_{200}$ they find a strong alignment
-%between the two minor axis of the halo and the disc. 
-%For larger radii the angle between the components changes showing a
-%weak correlation between the two components. 
-%\cite{Debattista13} performed a study on the disc-halo alignment
-%performing controlled experiments on three different halos to study
-%changes the evolutionary change that drive the minor axis in the disc
-%and the halo to be aligned, their study by construction focuses only
-%on radii around $0.1R_{200}$.
-%Nevertheless, similarly to \cite{Bailin05}, they also report a strong
-%alignment in the region where the disc dominated. 
-%In conclusion, the twisting in the dark matter halo shapes seems to be
-%a feature already reported in the literature with smaller samples than
-%the one we use here. 
-%The strongest point of depart is that in our case the alignments do
-%not grow stronger as one approached the disc.
-%It is very likely that the detailed radial dependence of the twisting
-%depends on the hydrodynamics and feedback implementations. 
-
-We now use the results reported by \cite{LM10} and \cite{Bovy16}
+To finalize, we use the results reported by \cite{LM10} and \cite{Bovy16}
 to place our results in an observational context.
 \cite{LM10} used observations of the Sagittarius tidal stream to
 constrain the shape of the gravitational potential.
@@ -922,6 +925,8 @@ numerical results.
 
 
 \section*{Acknowledgements}
+We acknowledge fruitful discussions with Patricia Tissera during the
+preparation of the manuscript.
 This project has received funding from the European Union's Horizon
 2020 Research and Innovation Programme under the Marie
 Sk\l{}odowska-Curie grant agreement No 734374. 
