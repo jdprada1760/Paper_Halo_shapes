@@ -49,7 +49,7 @@ $^{2}$Max-Planck-Institut f\"ur Astrophysik, Karl-Schwarzschild-Str. 1, D-85741 
 
 % Abstract of the paper
 \begin{abstract}
-We present shape measurements of Milky Way sized dark matter halos at
+We present shape measurements of Milky Way-sized dark matter halos at
 redshift $z=0$ in a suite of 30 zoom simulations from the Auriga
 project. 
 We compare the results in full magnetohydrodynamics against dark
@@ -133,7 +133,7 @@ In this paper, we analyze the internal DM halo shape in thirty MW-type
 galaxies  from the Auriga project, which are state-of-the-art hydrodynamical simulations of galaxy formation.
 They have large enough numerical resolution, include an explicit
 cosmological context, and have appropriate feedback physics to produce
-realistic MW discs.
+realistic MW discs \citep{auriga,GBG18,GHF18}.
 Furthermore, the relatively large number of simulated systems allows us
 to obtain a handle on the statistical significance of our results.
 
@@ -498,14 +498,14 @@ I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
 \end{equation}
 where the particle positions are measured with respect to the minimum of the
 gravitational potential in each halo and are weighted by the inverse of 
-the k-th particle distance squared, $d_k^2 = \sum_{i=1}^3 x_k^{(i)} x_k^{(i)}$, giving each particle the same
+the $k$-th particle distance squared, $d_k^2 = \sum_{i=1}^3 x_k^{(i)} x_k^{(i)}$, giving each particle the same
 weight independent of distance.
 
 Diagonalization of this tensor yields the eigenvectors and
 eigenvalues that approximate the dark matter halo with an ellipsoidal shape.
 The axis lenghts of this ellipsoid, $a\geq b \geq c$, are the square
 roots of the  eigenvalues, and the directions of the principal
-axis are the corresponding eigenvectors. 
+axes are the corresponding eigenvectors. 
 
 We start the calculations taking into account all particles within a
 sphere of radius $R_{\rm initial}$ and then iteratively recompute the
@@ -631,7 +631,7 @@ considerably lower than the mean of the parent sample.
 \subsection{Halo-disc alignments}
 
 A common assumption in dynamical models of the MW dark matter halo is that
-its minor axis is perfectly aligned with the angular momentym of the
+its minor axis is perfectly aligned with the angular momentum of the
 stellar disc. 
 Although this is a reasonable assumption due to the stability of
 the galactic disc in this configuration in simplified models of isolated galaxies, this
@@ -655,7 +655,7 @@ are present in the sample.
 In six halos the alignment changes significantly as a
 function of radius produced by the twisting in the shape ellipsoids. 
 In contrast, the DMO simulations show coherent halo shapes as a
-function of radius without twisting. 
+function of radius without twisting with the exception of a single halo. 
 Because we are dealing with oblate halos $b/a\approx 1$, note that the
 directions corresponding to the medium and major axis could be subject
 to noise. 
@@ -770,26 +770,26 @@ with disc properties, we find a clear tendency that extended
 massive stellar discs correlate with spherical dark matter
 distributions.  
 
-The second part of our findings correspond to the disc-halo alignment.
+The second part of our findings concerns the disc-halo alignment.
 The dominant trend is that of a strong alignment between
 the disc and the dark matter halo shape at all radii. 
-In six halos of our sample we find a chaning alignment as a function
+In six halos of our sample we find a changing alignment as a function
 of radius.
 This implies a twisting in the halo shape as a function of
 radius.
-Considering that this effect is not present in our DMO simulations, it is
-very likely that the detailed radial dependence of the alignments
+Considering that this effect is virtually absent in our DMO simulations, it is
+very likely that the detailed radial evolution of the alignments
 between the disc and the halo depends on the hydrodynamics and
 feedback implementations. 
 
 Twisting has been also reported as an uncommon feature in some 
 simulated systems found in the literature. 
 \cite{JingSuto02} reported it in their dark
-matter only simulations as measured in the direction changes of large
+matter only simulations as measured through direction changes of large
 and medium shape axis. 
 They only had three high resolution MW-like halos and could not make a
 statistical statement about the significance of this effect.
-However, they see the twisting as an artifact resulting from high
+However, they saw the twisting as an artifact resulting from high
 values  of the $b/a$ ratios that make the determination of the medium
 axis noisy, an effect that we have demonstrated can be discarded for
 our simulations.
@@ -838,7 +838,7 @@ The DM component is written directly as a triaxial density profile
 with coaxial ellipsoids, and the corresponding potential is found by
 numerical integration. They find that the width of the Pal~5 stream gives $b/a\approx
 1$, and therefore fix it to be $b/a=1$ exactly. Using this value they report their 
-most stringent constraint of $c/a=0.93\pm0.16$ at a radius of $\approx 19$ kpc from the galactic
+most stringent constraint of $c/a=0.93\pm0.16$ at a radius of $\approx 19$ kpc from the Galactic
 center. 
 
 Figure~\ref{fig:observations} shows an explicit comparison in
@@ -877,7 +877,7 @@ including star formation and feedback.
 We applied the shape measurement algorithm by \cite{Allgood06} to the
 dark matter halos of these simulations to quantify the halo shape as a
 function of radius, and the degree of alignment between the angular
-momentum in stellar disc and the dark matter halo shape. 
+momentum in the stellar disc and the dark matter halo shape. 
 
 We find that MHD halos are rounder than DMO halos at all radii.
 MHD halos tend towards more oblate shapes, sometimes becoming almost spherical
@@ -906,7 +906,14 @@ an almost spherical halo, while none of the halos, neither in MHD nor
 DMO, has overlap with the shape constraints by \cite{LM10} at
 $\approx 40\,{\rm kpc}$, which argue for a more oblate shape.
 
-Using dark matter only simulations, \citet{VeraCiro11} suggested that
+
+
+
+A more complete understanding of the influence of baryons on the
+different properties we have measured will require at least two more elements.
+First, a study on how the halo and the disc co-evolved as a
+function of time. 
+For instance, using dark matter only simulations, \citet{VeraCiro11} suggested that
 the current dark matter halo shape strongly correlates with the time
 evolution of the halo as traced by the shape measured at the virial radius. 
 This effect might largely be washed out and no longer hold once baryons are included. 
@@ -914,14 +921,10 @@ The opposite trend of triaxiality in MHD simulation as a function of
 radius compared to the DMO simulations, together with the twisting effect in some of 
 the halos, seems to suggest that memory of the historical buildup is at most poorly 
 reflected in the shapes at $z=0$.
-
-
-A more complete understanding of the influence of baryons on the
-different properties we have measured will require at least two more elements.
-First, a study on how the halo and the disc co-evolved as a
-function of time. Second, a calibration of the effect of the cosmic web
+The second element to take into account is the effect of the cosmic web
 (both dark matter and gaseous) on any evolutionary trend
 \citep{2014MNRAS.443.1090F, 2017MNRAS.469..594B, 2019MNRAS.487.1607G}.
+
 We also think  that the twisting density shells we find in
 some of the halos are a feature that deserves further study, especially
 in light of attempts to  constrain halo shape parameters with tidal stream data.  The
